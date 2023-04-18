@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Fraunces:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Boogaloo', cursive;
+}
+
+body {
+    background: hsl(46.3, 100%, 91%);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3px;
+    flex: 1 1 100vw;
+}
+
+nav,
+main,
+aside {
+    background: hsl(46.3, 100%, 91%);
+    display: flex;
+    margin: 3px;
+}
+
+#conteudo-esquerdo {
+    flex: 1 1 200px;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#nometela {
+    margin-top: -50px;
+    font-size: 40px;
+    color: hsl(133, 41%, 31%);
+    text-align: center;
+}
+#conteudo-direito {
+    flex: 1 1 200px;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+nav {
+    flex: 1 1 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    flex: 20 1 500px;
+    height: calc(100vh - 224px);
+    align-items: center;
+    justify-content: center;
+    /* conta: 100% tamanho vertical - (Header (100px) + Footer(100px) + Margin (((3px+3px)/4)=24)) = (100 + 100 + 24 =224) */
+}
+
+aside {
+    flex: 1 1 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 923px) {
+    main {
+        height: calc(100vh - 224px);
+    }
+
+    aside {
+        height: calc(100vh - 224px);
+
+    }
+}
