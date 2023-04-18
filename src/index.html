@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MinhaSaude">
+    <title>MinhaSaúde</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/cabecalho.css" rel="stylesheet" type="text/css" />
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <li><img id="logo" src="assets/image/Logo.png" alt="MinhaSaúde"></li>
+
+        <nav id="cabecalho">
+            <h1>MinhaSaúde</h1>
+        </nav>
+    </header>
+    <main id="container">
+        <form id="login-form">
+            <div id="form-header">
+                <h1>Login</h1>
+            </div>
+            <div id="inputs">
+                <div class="inputbox">
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input id="email" type="text" name="email" placeholder="E-mail" required />
+                    </div>
+                </div>
+                <div class="inputbox">
+                    <div class="input-field">
+                        <i class="fa-solid fa-key"></i>
+                        <input id="password" type="password" name="senha" placeholder="Senha" required />
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i>
+                    </div>
+                    <div id="forgot_password">
+                        <a href="#">
+                            Esqueci minha senha
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <input type="submit" id="login_button" name="acao" value="Login " />
+            </div>
+            <div>
+                <hr>
+            </div>
+
+            <div>
+                <a class="conta" href="html/cadastro.html">Criar conta / Atualizar</a>
+            </div>
+        </form>
+    </main>
+
+    <script>
+        var email = document.getElementById('email');
+
+        email.addEventListener('focus', () => {
+            email.style.borderColor = 'hsl(173, 62%, 37%)';
+        })
+
+        email.addEventListener('blur', () => {
+            email.style.borderColor = '#ccc';
+        })
+
+        password.addEventListener('focus', () => {
+            password.style.borderColor = 'hsl(173, 62%, 37%)';
+        })
+
+        password.addEventListener('blur', () => {
+            password.style.borderColor = '#ccc';
+        })
+    </script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
