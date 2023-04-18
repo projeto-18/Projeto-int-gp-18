@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Fraunces:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: hsl(46.3, 100%, 91%);
+    display: flex;
+    margin: 3px;
+    flex: 1 1 100vw;
+    height: 100px;
+}
+
+li {
+    list-style: none;
+}
+
+#logo {
+    flex: 0 1 200px;
+    height: 80px;
+    margin-left: 40vw;
+    margin-top: 1vw;
+}
+
+header h1 {
+    margin: 3%;
+    font-size: 40pt;
+    color: hsl(133, 41%, 31%);
+    margin-left: -25vw;
+    margin-top: 3vw;
+}
+
+@media only screen and (max-width: 923px) {
+    header {
+        flex: 1 1 100vw;
+        height: 180px;
+    }
+
+    header h1 {
+        margin: -3%;
+        font-size: 35pt;
+        color: hsl(133, 41%, 31%);
+        margin-left: -50vw;
+        margin-top: 10vw;
+    }
+
+    #logo {
+        flex: 0 1 100px;
+        height: 80px;
+        margin-left: 50vw;
+        margin-top: 1vw;
+    }
+}

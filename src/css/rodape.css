@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    background: hsl(46.3, 100%, 91%);
+    display: flex;
+    margin: 3px;
+    flex: 1 1 100vw;
+    height: 100px;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#navegacao {
+    padding: 0px 90px 0px 90px;
+    height: 40pt;
+}
+
+li {
+    list-style: none;
+}
+
+@media only screen and (max-width: 923px) {
+    #navegacao {
+        padding: 0px 60px 0px 60px;
+        height: 20pt;
+    }
+}

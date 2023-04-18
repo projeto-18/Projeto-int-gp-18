@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Fraunces:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Boogaloo', cursive;
+}
+
+body {
+    background: hsl(46.3, 100%, 91%);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3px;
+    flex: 1 1 100vw;
+}
+
+nav {
+    display: flex;
+    margin: 3px;
+    flex: 1 1 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    flex: 20 1 500px;
+    height: calc(100vh - 224px);
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+#login-form {
+    background: hsl(46.3, 70%, 91%);
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+    border-radius: 8px;
+    gap: 30px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
+    height: fit-content;
+}
+
+#form-header h1 {
+    font-size: 40px;
+    color: hsl(133, 41%, 31%);
+    text-align: center;
+}
+
+#inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.input-field {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 3px;
+    cursor: text;
+}
+
+.input-field i {
+    font-size: 18px;
+    color: hsl(0, 0%, 63%);
+}
+
+.fa-eye {
+    position: absolute;
+    margin: 300px;
+    cursor: pointer;
+}
+
+.input-field input[type=text],
+input[type=password] {
+    font-size: 18px;
+    width: 300px;
+    background-color: hsl(50, 100%, 95%);
+    color: hsl(0, 0%, 63%);
+    height: 45px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    border-radius: 15px;
+    margin: 10px 0;
+}
+
+#forgot_password a {
+    text-decoration: none;
+    font-size: 15px;
+    color: hsl(0, 0%, 63%);
+}
+
+#forgot_password a:hover {
+    color: hsl(133, 41%, 31%);
+}
+
+form input[type=text]:focus,
+form input[type=password]:focus {
+    outline: 0;
+}
+
+form input[type=submit] {
+    font-size: 15pt;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    background-color: hsl(133, 41%, 31%);
+    color: hsl(0, 0%, 80%);
+    border: 0;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+form input[type=submit]:hover {
+    font-size: 20pt;
+    background-color: hsl(173, 48%, 56%);
+    color: hsl(133, 41%, 31%);
+    border: 1px solid hsl(133, 41%, 31%);
+    transform: scale(1.1);
+}
+
+.conta {
+    margin-left: 30%;
+    color: hsl(0, 0%, 63%);
+    font-weight: bold;
+    text-decoration: none;
+    transition: all .4s ease-out;
+}
+
+.conta:hover {
+    color: hsl(133, 41%, 31%);
+}
+
+@media only screen and (max-width: 923px) {
+    main {
+        height: calc(100vh - 330px);
+    }
+
+    #container {
+        height: 60vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #login-form {
+        display: flex;
+        flex-direction: column;
+        padding: 5px 10px;
+        border-radius: 8px;
+        gap: 20px;
+        height: fit-content;
+    }
+}
