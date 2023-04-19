@@ -9,7 +9,7 @@ footer {
     display: flex;
     margin: 3px;
     flex: 1 1 100vw;
-    height: 100px;
+    height: 50px;
 }
 
 #container {
@@ -21,7 +21,7 @@ footer {
 
 #navegacao {
     padding: 0px 90px 0px 90px;
-    height: 40pt;
+    height: 20pt;
 }
 
 li {
