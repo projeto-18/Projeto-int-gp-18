@@ -56,7 +56,7 @@ nav {
 
 main {
     flex: 20 1 500px;
-    height: calc(100vh - 232px);
+    height: calc(100vh - 224px);
     align-items: center;
     justify-content: center;
     /* conta: 100% tamanho vertical - (Header (100px) + Footer(100px) + Margin (((3px+3px)/4)=24)) = (100 + 100 + 24 =224) */
