@@ -125,105 +125,104 @@ body {
   
   
   #clock {
-    width: 160px;
-    height: 150px;
-    margin-top: 20px;
+    width: 120px;
+    height: 90px;
+    margin-top: 30px;
   }
   
   h2 {
-    font-size: 4em;
-  }
-
-
-  .dias{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 10px;
-    justify-content: center;
-    position: relative;
-    
-  }
-
-  #seg, #ter, #qua, #qui, #sex, #sab, #dom, #all {
-    text-align: center;
-    background-color: aqua;
-    width: 150px;
-    height: 60px;
     font-size: 3em;
-    border-bottom-right-radius: 50px;
-    border-top-right-radius: 50px;
-    border-bottom-left-radius: 50px;
-    border-top-left-radius: 50px;
-    margin: 30px;
-    box-shadow: 4px 4px 8px rgba(3, 3, 3, 0.301);
   }
 
-  #des1, #des2, #des3, #des4 #des5, #des6, #des7, #des8 {
-    width: 90px;
-    height: 30px;
-    border: none;
-    border-bottom-right-radius: 50px;
-    border-top-right-radius: 50px;
-    border-bottom-left-radius: 50px;
-    border-top-left-radius: 50px;
-    box-shadow: 3px 3px 5px rgba(3, 3, 3, 0.301);
-  }
-
-  @media screen and (max-width: 768px) {
-    .dias {
-      flex-direction: row;
-      align-items: center;
-    }
-
-    #seg, #ter, #qua, #qui, #sex, #sab, #dom, #all {
-    text-align: center;
-    width: 150px;
-    height: 60px;
-    font-size: 2em;
-    margin: 20px;
-    margin: auto;
-    }
-  }
-
-
-  #but{
+  .des{
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
-    width: 50%;
-    height: 100px; 
+    background-color: hsl(47, 90%, 81%);
+    width: 500px;
+    height: 300px;
     margin: auto;
-    margin-bottom: 10%;
+    box-shadow: 2px 2px 8px rgba(3, 3, 3, 0.596);
+    border-radius: 15px;
+    color: black;
+  }
+
+  .des h3{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0;
+    border-radius: 5px;
+    box-shadow: 0 10px 25px #00ffe11a;
+    padding: 10px;
+    color: black
+  }
+  
+  .des .content{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .content.disable{
+    cursor: no-drop;
+  }
+ 
+  .des .content .controls{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(245, 245, 245);
+    width: 100%;
+    height: 50px;
+    margin: 10px;
+    
+    
+    
+  }
+
+  .content.disable .controls {
+    opacity: .6;
+    pointer-events: none;
+  }
+
+  .des .content select{
+    margin: -10px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    color: black
+  }
+
+  .des .content select option{
+    width: 100%;
+    border: none;
+    background: transparent;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px;
+    color: #000;
+    
+  }
+
+  .des button{
+    width: 410px;
+    border: none;
+    font-size: 22px;
+    font-weight: bolder;
+    padding: 17px 0;
+    margin-top: 20px;
     border-radius: 20px;
-    margin-top: 50px;
-    
-    
+    background: #5dccbf;
+    color: black;
   }
 
-  #bot{
-    text-align: center;
-    background-color: rgba(0, 255, 255, 0.411);
-    width: 150px;
-    height: 60px;
-    font-size: 2em;
-    border-bottom-right-radius: 50px;
-    border-top-right-radius: 50px;
-    border-bottom-left-radius: 50px;
-    border-top-left-radius: 50px;
-    margin: 30px;
-    box-shadow: 4px 4px 8px rgba(3, 3, 3, 0.301);
-    
-  }
-
-  #bot:hover {
-    font-size: 20pt;
-    background-color: hsl(0, 0%, 80%);
-    color: hsl(133, 41%, 31%);
-    border: 1px solid hsl(0, 0%, 8%);
-    transform: scale(1.1);
-
-  }
+  
   
 
   #button{
@@ -248,6 +247,7 @@ body {
     color: hsl(0, 0%, 80%);
     font-size: 3em;
     box-shadow: 2px 2px 8px rgba(3, 3, 3, 0.301);
+    margin-top: 30%;
     
   }
 
