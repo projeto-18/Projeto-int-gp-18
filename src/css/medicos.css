@@ -23,6 +23,7 @@ aside {
     margin: 3px;
 }
 
+
 #titulo {
     display: flex;
     margin: 3px;
@@ -53,6 +54,35 @@ nav {
     align-items: center;
     justify-content: center;
 }
+
+.carrosel{
+    box-shadow: 2px 2px 4px black;
+    overflow: hidden;
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    border-radius: 15px;
+  }
+    
+  .iframe {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  iframe{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
 
 main {
     flex: 20 1 500px;
