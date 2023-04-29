@@ -26,7 +26,7 @@ li {
 }
 
 header h1 {
-    margin: 3%;
+    margin: %;
     font-size: 40pt;
     color: hsl(133, 41%, 31%);
     margin-left: -25vw;
@@ -41,7 +41,7 @@ header h1 {
 
     header h1 {
         margin: -5%;
-        font-size: 35pt;
+        font-size: 25pt;
         color: hsl(133, 41%, 31%);
         margin-left: -50vw;
         margin-top: 10vw;
@@ -50,7 +50,7 @@ header h1 {
     #logo {
         flex: 0 1 100px;
         height: 80px;
-        margin-left: -50vw;
+        margin-left: 50vw;
         margin-top: 1vw;
     }
 }
