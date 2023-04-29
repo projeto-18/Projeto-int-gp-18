@@ -69,11 +69,17 @@ main {
 }
 
 .input-field i {
-    font-size: 18px;
+    font-size: 20px;
     color: hsl(0, 0%, 63%);
 }
 
-.fa-eye {
+.bi-eye-fill {
+    position: absolute;
+    margin: 300px;
+    cursor: pointer;
+}
+
+.bi-eye-slash-fill {
     position: absolute;
     margin: 300px;
     cursor: pointer;
@@ -121,9 +127,9 @@ form input[type=submit] {
 
 form input[type=submit]:hover {
     font-size: 20pt;
-    background-color: hsl(173, 48%, 56%);
+    background-color: hsl(0, 0%, 80%);
     color: hsl(133, 41%, 31%);
-    border: 1px solid hsl(133, 41%, 31%);
+    border: 1px solid hsl(0, 0%, 80%);
     transform: scale(1.1);
 }
 
@@ -153,7 +159,7 @@ form input[type=submit]:hover {
     #login-form {
         display: flex;
         flex-direction: column;
-        padding: 5px 10px;
+        padding:5px 10px;
         border-radius: 8px;
         gap: 20px;
         height: fit-content;
