@@ -11,29 +11,36 @@ body {
 
 .iframe {
   display: flex;
-  transition: transform 0.5s ease-in-out;
-  transform: translateX(0);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 50%;
-  top: -5%;
-  transform: translateX(-50%);
-  margin: 20px;
+  width: 100px;
+  height: 200px;
+  margin-bottom: 120px;
 }
 
 iframe{
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  
+  width: 360px;
+  height: 327px;
 }
+  
+@media screen and (max-width: 767px) {
+  .iframe {
+    width: 100px;
+    height: 200px;
+    margin-bottom: 120px;
+  }
+
+  iframe {
+    width: 280px;
+    height: 300px;
+  }
+}
+ 
+
 
 
 
 #sos {
-    width: 130px;
-    height: 100px;
+    width: 100px;
+    height: 90px;
     border-radius: 50%;
   }
 
@@ -121,7 +128,7 @@ iframe{
   
 
   h1{
-    font-size: 5em;
+    font-size: 3em;
     color: rgba(40, 97, 2, 0.884);
   }
   hr{
@@ -138,38 +145,36 @@ iframe{
 
   #logo{ 
     margin-right: 10px; 
-    width: 180px;
-    height: 210px;
-    margin-top: 50px;
+    width: 150px;
+    height: 130px;
+    margin-top: 10px;
   }
 
   .formulario-container{
     margin-bottom: 50px;
     display: flex;
-    max-width: 800px;
+    max-width: 600px;
     height: 250px;
     background: white;
     margin: auto;
     border-radius: 15px;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.541);
-    border: none;
   }
   
   .formulario-container2{
     padding-top: 0px;
     display: flex;
-    max-width: 800px;
+    max-width: 600px;
     height: 250px;
     background: white;
     margin: auto;
     border-radius: 15px;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.541);
-    border: none;
     margin-top: 50px;
   }
   
   #n1{
-    font-size: 2em;
+    font-size: 1em;
     width: 250px;
     height: 40px;
     margin-top: 20px;
