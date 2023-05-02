@@ -7,11 +7,9 @@
     <meta name="description" content="MinhaSaude">
     <title>MinhaSaúde</title>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="../css/cabecalho.css" rel="stylesheet" type="text/css" />
     <link href="../css/cadastro.css" rel="stylesheet" type="text/css" />
 </head>
@@ -26,43 +24,46 @@
     </header>
 
     <main id="container">
-        <form id="register-form">
+        <form id="register-form" method="post" action="../php/envia.php">
             <div id="form-header">
                 <h1>Registrar-se</h1>
             </div>
             <div>
                 <div class="inputbox">
                     <div class="input-field">
-                        <i class="fa-solid fa-user"></i>
-                        <input id="name" type="text" name="name" placeholder="Nome" required />
+                        <i class="bi bi-person-fill"></i>
+                        <input id="name" type="text" name="name" placeholder="Nome" required autocomplete="off"/>
                     </div>
                     <div class="input-field">
-                        <i class="fa-solid fa-person"></i>
-                        <input id="username" type="text" name="username" placeholder="Usuário" required />
+                        <i class="bi bi-person"></i>
+                        <input id="username" type="text" name="username" placeholder="Usuário" required autocomplete="off"/>
                     </div>
                     <div class="input-field">
-                        <i class="fa-solid fa-passport"></i>
-                        <input id="cpf" type="text" name="cpf" placeholder="CPF" required />
+                        <i class="bi bi-file-earmark-person-fill"></i>
+                        <input id="cpf" type="text" name="cpf"placeholder="CPF" required autocomplete="off" />
                     </div>
                     <div class="inputbox">
                         <div class="input-field">
-                            <i class="fa-solid fa-envelope"></i>
-                            <input id="email" type="text" name="email" placeholder="E-mail" required />
+                            <i class="bi bi-envelope-fill"></i>
+                            <input id="email" type="text" name="email" placeholder="E-mail" required autocomplete="off"/>
                         </div>
                     </div>
                     <div class="inputbox">
                         <div class="input-field">
-                            <i class="fa-solid fa-key" aria-hidden="true"></i>
-                            <input id="password" type="password" name="senha" placeholder="Senha" required />
-                            <i id="verSenha" class="fa-solid fa-eye" aria-hidden="true"></i>
+                            <i class="bi bi-key-fill" aria-hidden="true"></i>
+                            <input id="password" type="password" name="senha" placeholder="Senha" required  autocomplete="off"/>
+                            <i class="bi bi-eye-fill" id="btn-senhaCadaastro" onclick="mostrarSenhaCadastro()"
+                                aria-hidden="true"></i>
                         </div>
                     </div>
+                    
                     <div class="inputbox">
                         <div class="input-field">
-                            <i class="fa-solid fa-key"></i>
-                            <input id="confirm_password" type="password" name="confirma_senha"
-                                placeholder="Confirma Senha" required />
-                            <i id="verConfirmSenha" class="fa-solid fa-eye" aria-hidden="true"></i>
+                            <i class="bi bi-key-fill"></i>
+                            <input id="confirm_password" type="password" name="confirmaSenha"
+                                placeholder="Confirma Senha" required  autocomplete="off"/>
+                            <i class="bi bi-eye-fill" id="btn-senhaconfirmaCadaastro"
+                                onclick="mostrarSenhaConfirmaCadastro()" aria-hidden="true"></i>
                         </div>
                     </div>
                     <br>
@@ -75,7 +76,8 @@
     </main>
     </script>
     <script src="../js/cadastro.js"></script>
-</script>
+    
+    </script>
 </body>
 
 </html>

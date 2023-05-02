@@ -67,11 +67,17 @@ main {
 }
 
 .input-field i {
-    font-size: 18px;
+    font-size: 20px;
     color: hsl(0, 0%, 63%);
 }
 
-.fa-eye{
+.bi-eye-fill {
+    position: absolute;
+    margin: 300px;
+    cursor: pointer;
+}
+
+.bi-eye-slash-fill {
     position: absolute;
     margin: 300px;
     cursor: pointer;
@@ -119,9 +125,9 @@ form input[type=password]:focus, form input[type=confirm_password]:focus {
 
 #register_button:hover {
     font-size: 20pt;
-    background-color: hsl(173, 48%, 56%);
+    background-color: hsl(0, 0%, 80%);
     color: hsl(133, 41%, 31%);
-    border: 1px solid hsl(133, 41%, 31%);
+    border: 1px solid hsl(0, 0%, 80%);
     transform: scale(1.1);
 }
 
