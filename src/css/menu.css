@@ -23,6 +23,42 @@ aside {
     margin: 3px;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+  
+  .item {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  
+  .item1 {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .container {
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    .item {
+      width: 20%;
+      margin-bottom: 0;
+      margin-right: 60px;
+    }
+  
+    .item1 {
+      width: 60%;
+      margin-bottom: 0;
+    }
+  }
+  
+
 #titulo {
     display: flex;
     margin: 3px;
