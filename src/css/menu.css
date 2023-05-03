@@ -9,7 +9,6 @@
 
 body {
     background: hsl(46.3, 100%, 91%);
-
     display: flex;
     flex-wrap: wrap;
     margin: 3px;
@@ -18,7 +17,8 @@ body {
 
 nav,
 main {
-    background: hsl(46.3, 100%, 91%);
+    /*background: hsl(46.3, 100%, 91%);*/
+    background: hsl(47, 92%, 43%);
     display: flex;
     margin: 3px;
 }
@@ -55,7 +55,7 @@ main {
     margin: -180px 100px;
     gap: 15px;
 }
-/*    margin-left: 400px;*/
+
 #menu-dir {
     position: absolute;
     display: flex;
