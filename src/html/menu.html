@@ -6,12 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="MinhaSaude">
     <title>MinhaSaúde</title>
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <link href="../css/cabecalho.css" rel="stylesheet" type="text/css" />
     <link href="../css/menu.css" rel="stylesheet" type="text/css" />
     <link href="../css/rodape.css" rel="stylesheet" type="text/css" />
@@ -26,35 +21,78 @@
         </nav>
     </header>
     <section id="titulo">
-        <nav>titulo da pagina</nav>
+        
+        <nav>
+            <div class="titulo">
+                <i class="bi bi-menu-button-wide-fill"></i>
+                Menu
+            </div> </nav>
     </section>
     <section id="conteudo-esquerdo">
-        <nav>NÃO FAZER NADA AQUI</nav>
         <nav>
-            NÃO FAZER NADA AQUI
+            <div class="iframe">
+                <div class="carrosel">
+                    <iframe src="../html/frase_do_dia.html" frameborder="0">
+                    </iframe>
+                </div>
+            </div>
+        </nav>
+        <nav>
+            Despertador
         </nav>
     </section>
     <main>
-        <section>
-            <h1 id="nometela">
-                AQUI VAI FICAR SEU CÓDIGO
-            </h1>
+        <section id="menu">
+            <div id="menu-dir">
+                <div>
+                    <a href="sentimentos.html"><input type="submit" class="sentimentos" id="input-menu" name="acao" value="Meus Sentimentos" /></a>
+                </div>
+                <br>
+                <div><a href="#"><input type="submit" class="medicos" id="input-menu" name="acao" value="Meus Médicos" /></a> 
+                </div>
+                <br>
+                 <div>
+                    <a href="#"><input type="submit" class="observacoes" id="input-menu" name="acao" value="Minhas Observações" /></a>
+                </div>
+            </div>
+            <div id="menu-esq">
+                <div>
+                    <a href="#"><input type="submit" class="anjos" id="input-menu" name="acao" value="Meus Anjos" /></a>   
+                </div>
+                <br>
+                <div>
+                    <a href=""><input type="submit" class="relatorios" id="input-menu" name="acao" value="Relatorios" /></a>
+                </div>
+                <br>
+                <div>
+                    <a href="../html/contato_emergencia.html"><input type="submit" class="ajuda" id="input-menu-ajuda" name="acao" value="Preciso de Ajuda" /></a>
+                </div>
+            </div>
         </section>
     </main>
+    <div>
+        <a href="#"><input type="submit" id="emergencia" name="acao" value="Emergência" /></a>
+        
+    </div>
     <footer>
         <nav>
             <ul id="container">
-                <li><img id="navegacao" src="../assets/image/home.png" alt="HomePage">
+                <li><a href="../html/menu.html"><img id="navegacao" src="../assets/image/home.png" alt="HomePage"></a>
                 </li>
-                <li><img id="navegacao" src="../assets/image/document.png" alt="HomePage">
+                <li>
+                    <a href="#"><img id="navegacao" src="../assets/image/document.png" alt="HomePage"></a>
                 </li>
-                <li><img id="navegacao" src="../assets/image/medical.png" alt="HomePage">
+                <li>
+                    <a href="#"><img id="navegacao" src="../assets/image/medical.png" alt="HomePage"></a>
                 </li>
-                <li><img id="navegacao" src="../assets/image/heart.png" alt="HomePage">
+                <li>
+                    <a href="#"><img id="navegacao" src="../assets/image/heart.png" alt="HomePage"></a>
                 </li>
-                <li><img id="navegacao" src="../assets/image/help.png" alt="HomePage">
+                <li>
+                    <a href="#"><img id="navegacao" src="../assets/image/help.png" alt="HomePage"></a>
                 </li>
-                <li><img id="navegacao" src="../assets/image/down.png" alt="HomePage">
+                <li>
+                    <a href="#"><img id="navegacao" src="../assets/image/down.png" alt="HomePage"></a>
                 </li>
             </ul>
         </nav>
