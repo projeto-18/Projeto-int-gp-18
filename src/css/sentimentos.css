@@ -1,72 +1,90 @@
 @import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Fraunces:wght@700&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     font-family: 'Boogaloo', cursive;
 }
 
 body {
     background: hsl(46.3, 100%, 91%);
+  
+}
+
+
+#blis {
+    width: 130px;
+    border-radius: 50%;
+    margin-right: 30px;
+  }
+
+  #cabecalho {
     display: flex;
-    flex-wrap: wrap;
-    margin: 3px;
-    flex: 1 1 100vw;
-}
-
-nav,
-main,
-aside {
-    background: hsl(46.3, 100%, 91%);
+    align-items: center;
+  }
+  
+  .container {
     display: flex;
-    margin: 3px;
-}
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+  
+  .item {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  
+  .item1 {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .container {
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    .item {
+      width: 20%;
+      margin-bottom: 0;
+      margin-right: 60px;
+    }
+  
+    .item1 {
+      width: 60%;
+      margin-bottom: 0;
+    }
+  }
 
-#titulo {
+  .smiles{
     display: flex;
-    margin: 3px;
-    flex: 1 1 100vw;
-    height: 50px;
-}
-
-#image1{
-
-}
-
-.sentimentos{
     align-items: center;
     justify-content: center;
-}
+    margin: 10px;
+  }
 
-#image1:hover{
-    width:250px;
-    color: gray;
-}
-
-#image2:hover{
-    width:250px;
-    color: gray;
-}
-
-#image3:hover{
-    width:250px;
-    color: gray;
-}
-
-#image4:hover{
-    width:250px;
-    color: gray;
-}
-
-#image5:hover{
-    width:250px;
-    color: gray;
-}
-
-#image6:hover{
-    width:250px;
-    color: gray;
+  #titulo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  
+  .i1 {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  
+  .i2 {
+    width: 80%;
+    margin-bottom: 20px; 
 }
 
 #conteudo-esquerdo {
@@ -74,68 +92,67 @@ aside {
     display: flex;
     flex-flow: column wrap;
 }
-h2{
-    font-size: 3em;    
-    
-    margin: auto;
-
-}
-
-.botão{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-
-}
-
-#botão{
-    width: 300px;
-    height: 40px;
-    border-radius: 15px;
-    background-color: hsl(133, 41%, 31%);
-}
-
 
 #nometela {
     margin-top: -50px;
     font-size: 40px;
     color: hsl(133, 41%, 31%);
     text-align: center;
-}
-#conteudo-direito {
-    flex: 1 1 200px;
     display: flex;
-    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-container {
+    width: 120%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-container ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  
+  footer {
+    display: flex;
+    background: hsl(46.3, 100%, 91%);
+    height: 100%;
+    border-radius: 35px;
+    margin-left: -1%;
+    max-width: 70%;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .footer-container {
+      justify-content: center;
+    }
+  }
+  
+
+#navegacao {
+    padding: 0px 90px 0px 90px;
+    height: 40pt;
+    
 }
 
-nav {
-    flex: 1 1 200px;
-    align-items: center;
-    justify-content: center;
-}
-
-main {
-    flex: 20 1 500px;
-    height: calc(100vh - 224px);
-    align-items: center;
-    justify-content: center;
-    /* conta: 100% tamanho vertical - (Header (100px) + Footer(100px) + Margin (((3px+3px)/4)=24)) = (100 + 100 + 24 =224) */
-}
-
-aside {
-    flex: 1 1 200px;
-    align-items: center;
-    justify-content: center;
-}
 
 @media only screen and (max-width: 923px) {
-    main {
-        height: calc(100vh - 224px);
-    }
-
-    aside {
-        height: calc(100vh - 224px);
-
+    #navegacao {
+        padding: 0px 60px 0px 60px;
+        justify-content: center;
+        
     }
 }
+
+
+
+

@@ -16,36 +16,119 @@ body {
 }
 
 nav,
-main,
-aside {
+main {
     background: hsl(46.3, 100%, 91%);
     display: flex;
     margin: 3px;
 }
 
 #titulo {
+    font-size: 35px;
     display: flex;
+    color: hsl(133, 41%, 31%);
     margin: 3px;
     flex: 1 1 100vw;
     height: 50px;
 }
 
+.titulo i {
+    font-size: 30px;
+    margin: 6px -40px;
+}
+
+.bi-menu-button-wide-fill {
+    position: absolute;
+    margin: 300px;
+}
+
 #conteudo-esquerdo {
-    flex: 1 1 200px;
     display: flex;
+    width: 300px;
     flex-flow: column wrap;
 }
 
-#nometela {
-    margin-top: -50px;
-    font-size: 40px;
-    color: hsl(133, 41%, 31%);
-    text-align: center;
+.iframe {
+    margin-top: 0px;
+    width: -300px;
+    height: 240px;
 }
-#conteudo-direito {
-    flex: 1 1 200px;
+#menu-esq {
+    position: absolute;
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
+    margin: -180px 100px;
+    gap: 15px;
+}
+
+#menu-dir {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin: -180px -400px;
+    gap: 15px;
+}
+
+#input-menu {
+    font-size: 15pt;
+    width: 300px;
+    height: 60px;
+    cursor: pointer;
+    background-color: hsl(133, 41%, 31%);
+    color: hsl(0, 0%, 80%);
+    border: 0;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+#input-menu:hover {
+    font-size: 20pt;
+    background-color: hsl(0, 0%, 80%);
+    color: hsl(133, 41%, 31%);
+    border: 1px solid hsl(0, 0%, 80%);
+    transform: scale(1.1);
+}
+
+#input-menu-ajuda {
+    font-size: 25pt;
+    width: 300px;
+    height: 60px;
+    cursor: pointer;
+    background-color: hsl(0, 100%, 50%);
+    color: hsl(0, 0%, 80%);
+    border: 0;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+#input-menu-ajuda:hover {
+    font-size: 20pt;
+    background-color: hsl(0, 100%, 61%);
+    color: hsl(0, 0%, 80%);
+    border: 1px solid hsl(0, 0%, 80%);
+    transform: scale(1.1);
+}
+
+#emergencia {
+    position: absolute;
+    font-size: 35pt;
+    margin: 420px -1100px;
+    width: 1000px;
+    height: 70px;
+    cursor: pointer;
+    background-color: hsl(0, 100%, 50%);
+    color: hsl(0, 0%, 80%);
+    border: 0;
+    border-radius: 20px;
+    transition: 0.3s;
+    justify-content: center;
+}
+
+#emergencia:hover {
+    font-size: 20pt;
+    background-color: hsl(0, 100%, 61%);
+    color: hsl(0, 0%, 80%);
+    border: 1px solid hsl(0, 0%, 80%);
+    transform: scale(1.1);
 }
 
 nav {
@@ -62,19 +145,13 @@ main {
     /* conta: 100% tamanho vertical - (Header (100px) + Footer(100px) + Margin (((3px+3px)/4)=24)) = (100 + 100 + 24 =224) */
 }
 
-aside {
-    flex: 1 1 200px;
-    align-items: center;
-    justify-content: center;
-}
-
 @media only screen and (max-width: 923px) {
     main {
         height: calc(100vh - 224px);
     }
 
-    aside {
+    /*aside {
         height: calc(100vh - 224px);
 
-    }
+    }*/
 }
