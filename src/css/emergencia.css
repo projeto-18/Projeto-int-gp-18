@@ -251,30 +251,7 @@ main {
 #fone1:hover{
     font-size: 25px;
 }
-/*
 
-hsl(50.315, 100%, 50%) //Amarelo
-
-#input-menu {
-    font-size: 15pt;
-    width: 300px;
-    height: 60px;
-    cursor: pointer;
-    background-color: hsl(133, 41%, 31%);
-    color: hsl(0, 0%, 80%);
-    border: 0;
-    border-radius: 20px;
-    transition: 0.3s;
-}
-
-#input-menu:hover {
-    font-size: 20pt;
-    background-color: hsl(0, 0%, 80%);
-    color: hsl(133, 41%, 31%);
-    border: 1px solid hsl(0, 0%, 80%);
-    transform: scale(1.1);
-}
-*/
 #input-menu-ajuda {
     font-size: 25pt;
     width: 300px;
@@ -336,11 +313,6 @@ main {
     main {
         height: calc(100vh - 224px);
     }
-
-    /*aside {
-        height: calc(100vh - 224px);
-
-    }*/
 }
 
 @keyframes pisca-pisca {
