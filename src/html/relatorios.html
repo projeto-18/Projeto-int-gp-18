@@ -15,6 +15,8 @@
     <link href="../css/cabecalho.css" rel="stylesheet" type="text/css" />
     <link href="../css/relatorios.css" rel="stylesheet" type="text/css" />
     <link href="../css/rodape.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
 </head>
 
 <body>
@@ -26,7 +28,12 @@
         </nav>
     </header>
     <section id="titulo">
-        <nav>titulo da pagina</nav>
+        <nav>
+            <div class="titulo">
+                <i class="bi bi-bar-chart-line"></i>
+                Relatório com Gráfico
+            </div> 
+        </nav>
     </section>
     <section id="conteudo-esquerdo">
         <nav>NÃO FAZER NADA AQUI</nav>
@@ -35,11 +42,53 @@
         </nav>
     </section>
     <main>
-        <section>
-            <h1 id="nometela">
-                AQUI VAI FICAR SEU CÓDIGO
-            </h1>
-        </section>
+        <div style="width: 30%;">
+            <canvas id="myChart"></canvas>
+        </div>
+        <script>
+            // Dados do gráfico
+            var data = {
+                labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio'],
+                datasets: [{
+                    label: 'Vendas',
+                    data: [1200, 1500, 900, 1800, 2000],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255,99,132,1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            };
+    
+            // Opções do gráfico
+            var options = {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            };
+    
+            // Criação do gráfico
+            var ctx = document.getElementById('myChart').getContext('2d');
+            var myChart = new Chart(ctx, {
+                type: 'bar',
+                data: data,
+                options: options
+            });
+        </script>
     </main>
     <div>
         <a href="../html/emergencia.html"><input type="submit" id="emergencia" name="acao" value="Emergência" /></a>
