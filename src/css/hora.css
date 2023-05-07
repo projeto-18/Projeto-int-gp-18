@@ -15,57 +15,112 @@ body {
     flex: 1 1 100vw;
 }
 
-nav,
-main {
-    background: hsl(46.3, 100%, 91%);
+#meu-despertador {
     display: flex;
-    margin: 3px;
-}
-
-nav {
-    flex: 1 1 200px;
-    align-items: center;
-    justify-content: center;
-}
-
-main {
-    flex: 20 1 500px;
-    height: calc(100vh - 224px);
-    align-items: center;
-    justify-content: center;
-    /* conta: 100% tamanho vertical - (Header (100px) + Footer(100px) + Margin (((3px+3px)/4)=24)) = (100 + 100 + 24 =224) */
-}
-
-#titulo {
-    font-size: 35px;
-    display: flex;
-    color: hsl(133, 41%, 31%);
-    margin: 3px;
-    flex: 1 1 100vw;
+    flex-direction: column;
+    margin-top: 5px;
+    width: 500px;
     height: 50px;
 }
 
-.titulo i {
-    font-size: 30px;
-    margin: 6px -50px;
+#relogio {
+    align-items: center;
+    justify-content: center;
+    margin: 0px 0px 50px;
 }
 
-.bi-alarm {
+.titulo-despertador {
     position: absolute;
-    margin: 300px;
+    margin: -10px 0px 0px;
+    font-size: 25px;
+    color: hsl(133, 41%, 31%);
 }
 
-#conteudo-esquerdo {
+.despertador {
     display: flex;
-    width: 300px;
-    flex-flow: column wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(46.3, 70%, 91%);
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
+    border-radius: 20px;
+    margin: -22px auto;
 }
 
-.iframe {
-    margin-top: 0px;
-    width: -300px;
-    height: 240px;
+.despertador h3 {
+    font-size: 30pt;
+    display: flex;
+    flex-direction: column;
+    color: hsl(133, 41%, 31%);
+    padding: 10px 0px;
+    gap: 10px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
+    height: fit-content;
+    margin: 0px auto 0px;
 }
+
+.despertador .content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.content.disable {
+    cursor: no-drop;
+}
+
+.despertador .content .controls {
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin: 0px auto 30px;
+    height: 40px;
+    width: 100%;
+}
+
+.content.disable .controls {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.despertador .content select {
+    font-size: 15px;
+    font-weight: bold;
+    background: transparent;
+    color: hsl(133, 41%, 31%);
+    border: none;
+    padding: 3px;
+    margin: 0px;
+}
+
+.despertador .content select option {
+    font-weight: bold;
+    color: hsl(132, 83%, 14%);
+    background: transparent;
+    border: none;
+    padding: 5px;
+    width: 100%;
+}
+
+.despertador button {
+    font-size: 10pt;
+    background-color: hsl(133, 41%, 31%);
+    color: hsl(0, 0%, 80%);
+    border: none;
+    border-radius: 20px;
+     cursor: pointer;       
+     padding: 5px;
+    margin: 0px auto 0px;
+    transition: 0.3s;
+    width: 50%;
+}
+
+
+
+
+
 /*
 #meu-despertador {
     display: flex;
@@ -178,31 +233,3 @@ main {
     padding: 10px;
 }
 */
-#emergencia {
-    position: absolute;
-    font-size: 35pt;
-    margin: 420px -1100px;
-    width: 1000px;
-    height: 70px;
-    cursor: pointer;
-    background-color: hsl(0, 100%, 50%);
-    color: hsl(0, 0%, 80%);
-    border: 0;
-    border-radius: 20px;
-    transition: 0.3s;
-    justify-content: center;
-}
-
-#emergencia:hover {
-    font-size: 20pt;
-    background-color: hsl(0, 100%, 61%);
-    color: hsl(0, 0%, 80%);
-    border: 1px solid hsl(0, 0%, 80%);
-    transform: scale(1.1);
-}
-
-@media only screen and (max-width: 923px) {
-    main {
-        height: calc(100vh - 224px);
-    }
-}
