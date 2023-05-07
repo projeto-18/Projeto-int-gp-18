@@ -8,7 +8,8 @@
 }
 
 body {
-    background: hsl(46.3, 100%, 91%);
+    /*background: hsl(46.3, 100%, 91%);*/
+    background: hsl(47, 78%, 51%);
     display: flex;
     flex-wrap: wrap;
     margin: 3px;
@@ -16,36 +17,10 @@ body {
 }
 
 nav,
-main,
-aside {
+main {
     background: hsl(46.3, 100%, 91%);
     display: flex;
     margin: 3px;
-}
-
-#titulo {
-    display: flex;
-    margin: 3px;
-    flex: 1 1 100vw;
-    height: 50px;
-}
-
-#conteudo-esquerdo {
-    flex: 1 1 200px;
-    display: flex;
-    flex-flow: column wrap;
-}
-
-#nometela {
-    margin-top: -50px;
-    font-size: 40px;
-    color: hsl(133, 41%, 31%);
-    text-align: center;
-}
-#conteudo-direito {
-    flex: 1 1 200px;
-    display: flex;
-    flex-flow: column wrap;
 }
 
 nav {
@@ -62,6 +37,147 @@ main {
     /* conta: 100% tamanho vertical - (Header (100px) + Footer(100px) + Margin (((3px+3px)/4)=24)) = (100 + 100 + 24 =224) */
 }
 
+#titulo {
+    font-size: 35px;
+    display: flex;
+    color: hsl(133, 41%, 31%);
+    margin: 3px;
+    flex: 1 1 100vw;
+    height: 50px;
+}
+
+.titulo i {
+    font-size: 30px;
+    margin: 6px -50px;
+}
+
+.bi-alarm {
+    position: absolute;
+    margin: 300px;
+}
+
+#conteudo-esquerdo {
+    display: flex;
+    width: 300px;
+    flex-flow: column wrap;
+}
+
+.iframe {
+    margin-top: 0px;
+    width: -300px;
+    height: 240px;
+}
+
+#meu-despertador {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    width: 295px;
+    height: 0px;
+}
+
+#relogio {
+    align-items: center;
+    justify-content: center;
+    margin: 0px -40px 200px;
+}
+
+.titulo-despertador {
+    position: absolute;
+    margin: 0px auto 0px;
+    font-size: 25px;
+    color: hsl(133, 41%, 31%);
+}
+
+.despertador {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(47, 90%, 81%);
+    width: 270px;
+    height: 180px;
+    margin: -200px -135px;
+    box-shadow: 2px 2px 8px rgba(3, 3, 3, 0.596);
+    border-radius: 15px;
+}
+
+.despertador h3 {
+    font-size: 30px;
+    font-weight: 500px;
+    background: hsl(46.3, 70%, 91%);
+    color: hsl(133, 41%, 31%);
+    margin: 0px auto 0px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 40px;
+    border-radius: 8px;
+    gap: 10px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
+    height: fit-content;
+}
+
+.despertador .content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.content.disable {
+    cursor: no-drop;
+}
+
+.despertador .content .controls {
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    border-radius: 8px;
+    height: 20px;
+    margin: 20px auto 0px;
+    width: 100%;
+}
+
+.content.disable .controls {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.despertador .content select {
+    margin: -10px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    padding: -5px;
+    color: hsl(133, 41%, 31%);
+}
+
+.despertador .content select option {
+    width: 100%;
+    border: none;
+    background: transparent;
+    font-weight: bold;
+    padding: 5px;
+    color: hsl(132, 83%, 14%);
+}
+
+.despertador button {
+    font-size: 10pt;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    background-color: hsl(133, 41%, 31%);
+    color: hsl(0, 0%, 80%);
+    border: none;
+    border-radius: 20px;
+    transition: 0.3s;
+    margin: 20px auto 0px;
+    width: 200px;
+    border: none;
+    padding: 10px;
+}
 
 #emergencia {
     position: absolute;
@@ -89,10 +205,5 @@ main {
 @media only screen and (max-width: 923px) {
     main {
         height: calc(100vh - 224px);
-    }
-
-    aside {
-        height: calc(100vh - 224px);
-
     }
 }

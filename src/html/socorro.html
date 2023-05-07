@@ -6,12 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="MinhaSaude">
     <title>MinhaSaúde</title>
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <link href="../css/cabecalho.css" rel="stylesheet" type="text/css" />
     <link href="../css/socorro.css" rel="stylesheet" type="text/css" />
     <link href="../css/rodape.css" rel="stylesheet" type="text/css" />
@@ -26,20 +21,83 @@
         </nav>
     </header>
     <section id="titulo">
-        <nav>titulo da pagina</nav>
+        <nav>
+            <div class="titulo">
+                <i class="bi bi-alarm"></i>
+                Meu Despertador
+            </div> 
+        </nav>
     </section>
     <section id="conteudo-esquerdo">
-        <nav>NÃO FAZER NADA AQUI</nav>
-        <nav>
-            NÃO FAZER NADA AQUI
+        <nav class="superior">
+            <div class="iframe">
+                <div class="carrosel">
+                    <iframe src="../html/frase_do_dia.html" frameborder="0" width="280" height="300" scolling = "no" style="border:none;" allowfullscreen="" loading="lazy" >
+                    </iframe>
+                </div>
+            </div>
+        </nav>
+        
+        <nav id="meu-despertador">
+            <nav id="relogio">
+                <div class="titulo-despertador">
+                    <i id="relogio" class="bi bi-alarm"></i>
+                    Meu Despertador
+                </div> 
+            </nav>
+            <section id="container-despertador">
+                <div class="despertador">
+                    <h3>00:00:00 PM</h3>
+                    <div class="content">
+                        <div class="controls">
+                            <select>
+                                <option value="Hour" selected disabled hidden>Horas</option>
+                            </select>
+                        </div>
+            
+                        <div class="controls">
+                            <select>
+                                <option value="Minute" selected disabled hidden>Minutos</option>
+                            </select>
+                        </div>
+            
+                        <div class="controls">
+                            <select>
+                                <option value="AM/PM" selected disabled hidden>AM/PM</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button>Ativar Alarme</button>
+                </div>
+            </section>
         </nav>
     </section>
     <main>
-        <section>
-            <h1 id="nometela">
-                AQUI VAI FICAR SEU CÓDIGO
-            </h1>
-        </section>
+        <!--section id="meu-despertador">
+            <div class="despertador">
+                <h3>00:00:00 PM</h3>
+                <div class="content">
+                    <div class="controls">
+                        <select>
+                            <option value="Hour" selected disabled hidden>Horas</option>
+                        </select>
+                    </div>
+        
+                    <div class="controls">
+                        <select>
+                            <option value="Minute" selected disabled hidden>Minutos</option>
+                        </select>
+                    </div>
+        
+                    <div class="controls">
+                        <select>
+                            <option value="AM/PM" selected disabled hidden>AM/PM</option>
+                        </select>
+                    </div>
+                </div>
+                <button>Ativar Alarme</button>
+            </div>
+        </section-->
     </main>
     <div>
         <a href="../html/emergencia.html"><input type="submit" id="emergencia" name="acao" value="Emergência" /></a>
@@ -68,6 +126,6 @@
         </nav>
     </footer>
 
+    <script src="../js/clock.js"></script>
 </body>
-
 </html>
