@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Fraunces:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Boogaloo', cursive;
+}
+
+body {
+    background: hsl(46.3, 100%, 91%);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3px;
+    flex: 1 1 100vw;
+}
+.modal{
+    position: fixed;
+    padding: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(133, 41%, 31%);
+    transform: scale(1.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25s ease-in-out;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 16px 24px;
+    width: 380px;
+    border-radius: 0.5rem; 
+}
+
+span{
+    float: right;
+    width: 24px;
+    cursor: pointer;
+    background-color: lightgray;
+    text-align: center;
+    line-height: 24px;
+}
+
+span:hover{
+    background-color: darkgray;
+}
+
+.show-modal{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+}
+
+.atencao{
+    font-size: 45pt;
+    text-align: center;
+    color: hsl(0, 100%, 50%);
+    animation: pisca-pisca 1s linear infinite;
+}
+
+.item{
+    font-size: 25pt;
+    text-align: justify;
+    color: hsl(133, 41%, 31%); 
+}
+
+.confirmacao{
+    font-size: 25pt;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    background-color: hsl(133, 41%, 31%);
+    color: hsl(0, 0%, 80%);
+    border: 0;
+    border-radius: 20px;
+    transition: 0.3s;
+    margin: 15px auto;
+}
+
+.confirmacao:hover{
+    font-size: 28pt;
+    background-color: hsl(0, 0%, 80%);
+    color: hsl(133, 41%, 31%);
+    border: 1px solid hsl(0, 0%, 80%);
+    transform: scale(1.1);
+}
+
+nav,
+main {
+    background: hsl(46.3, 100%, 91%);
+    /*background: hsl(47, 82%, 45%);*/
+    display: flex;
+    margin: 3px;
+}
+
+#titulo {
+    font-size: 30px;
+    display: flex;
+    color: hsl(133, 41%, 31%);
+    margin: 5px;
+    flex: 1 1 100vw;
+    height: 30px;
+}
+
+.titulo i {
+    font-size: 30px;
+    margin: 6px 30px;
+}
+
+.bi-menu-button-wide-fill {
+    position: absolute;
+    margin: 300px;
+}
+
+#conteudo-esquerdo {
+    flex: 1 1 200px;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#input-contatos {
+    position: absolute;
+    font-size: 25pt;
+    width: 800px;
+    height: 60px;
+    cursor: pointer;
+    background-color: hsl(266, 39%, 58%);
+    color: hsl(0, 0%, 80%);
+    border: 0;
+    border-radius: 20px;
+    transition: 0.3s;
+    justify-content: center;
+}
+
+#input-contatos:hover {
+    font-size: 20pt;
+    background-color: hsl(133, 41%, 31%);
+    color: hsl(266, 39%, 58%);
+    border: 1px solid hsl(134, 33%, 63%);
+    transform: scale(1.1);
+}
+
+.familiar{
+    margin: -150px -370px;
+}
+
+.amigo{
+    margin: -70px -370px; 
+}
+
+
+#input-help1 {
+    position: absolute;
+    font-size: 20pt;
+    width: 200px;
+    height: 80px;
+    cursor: pointer;
+    background-color: hsl(50, 100%, 50%);
+    color: hsl(266, 39%, 58%);
+    border: 0;
+    border-radius: 20px;
+    transition: 0.3s;
+    justify-content: center;
+}
+
+#input-help1:hover {
+    font-size: 25pt;
+    background-color: hsl(133, 41%, 31%);
+    color: hsl(50, 100%, 50%);
+    border: 1px solid hsl(134, 33%, 63%);
+    transform: scale(1.1);
+}
+
+#input-help2 {
+    position: absolute;
+    font-size: 15pt;
+    width: 200px;
+    height: 80px;
+    cursor: pointer;
+    background-color: hsl(50, 100%, 50%);
+    color: hsl(266, 39%, 58%);
+    border: 0;
+    border-radius: 20px;
+    transition: 0.3s;
+    justify-content: center;
+}
+
+#input-help2:hover {
+    font-size: 16pt;
+    background-color: hsl(133, 41%, 31%);
+    color: hsl(50, 100%, 50%);
+    border: 1px solid hsl(134, 33%, 63%);
+    transform: scale(1.1);
+}
+
+.policia{
+    font-size: 20pt;
+    flex-wrap: wrap;
+    margin: 50px -250px;
+}
+
+#fone1 {
+    position: absolute;
+    font-size: 20px;
+    margin: 60px -240px;
+}
+
+.sus{
+    font-size: 20pt;
+    flex-wrap: wrap;
+    margin: 150px -250px;
+}
+
+#fone2 {
+    position: absolute;
+    font-size: 20px;
+    margin: 160px -240px;
+}
+
+.direitos{
+    font-size: 20px;
+    flex-wrap: wrap;
+    margin: 30px 150px;
+}
+
+#fone3 {
+    position: absolute;
+    font-size: 20px;
+    margin: 40px 160px;
+}
+
+.protecao{
+    font-size: 20px;
+    flex-wrap: wrap;
+    margin: 131px 150px;
+}
+
+#fone4 {
+    position: absolute;
+    font-size: 20px;
+    margin: 140px 160px;
+}
+
+
+#fone1:hover{
+    font-size: 25px;
+}
+/*
+
+hsl(50.315, 100%, 50%) //Amarelo
+
+#input-menu {
+    font-size: 15pt;
+    width: 300px;
+    height: 60px;
+    cursor: pointer;
+    background-color: hsl(133, 41%, 31%);
+    color: hsl(0, 0%, 80%);
+    border: 0;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+#input-menu:hover {
+    font-size: 20pt;
+    background-color: hsl(0, 0%, 80%);
+    color: hsl(133, 41%, 31%);
+    border: 1px solid hsl(0, 0%, 80%);
+    transform: scale(1.1);
+}
+*/
+#input-menu-ajuda {
+    font-size: 25pt;
+    width: 300px;
+    height: 60px;
+    cursor: pointer;
+    background-color: hsl(0, 100%, 50%);
+    color: hsl(0, 0%, 80%);
+    border: 0;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+#input-menu-ajuda:hover {
+    font-size: 20pt;
+    background-color: hsl(0, 100%, 61%);
+    color: hsl(0, 0%, 80%);
+    border: 1px solid hsl(0, 0%, 80%);
+    transform: scale(1.1);
+}
+
+#emergencia {
+    position: absolute;
+    font-size: 35pt;
+    margin: 420px -1100px;
+    width: 1000px;
+    height: 70px;
+    cursor: pointer;
+    background-color: hsl(0, 100%, 50%);
+    color: hsl(0, 0%, 80%);
+    border: 0;
+    border-radius: 20px;
+    transition: 0.3s;
+    justify-content: center;
+}
+
+#emergencia:hover {
+    font-size: 20pt;
+    background-color: hsl(0, 100%, 61%);
+    color: hsl(0, 0%, 80%);
+    border: 1px solid hsl(0, 0%, 80%);
+    transform: scale(1.1);
+}
+
+nav {
+    flex: 1 1 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    flex: 20 1 500px;
+    height: calc(100vh - 224px);
+    align-items: center;
+    justify-content: center;
+    /* conta: 100% tamanho vertical - (Header (100px) + Footer(100px) + Margin (((3px+3px)/4)=24)) = (100 + 100 + 24 =224) */
+}
+
+@media only screen and (max-width: 923px) {
+    main {
+        height: calc(100vh - 224px);
+    }
+
+    /*aside {
+        height: calc(100vh - 224px);
+
+    }*/
+}
+
+@keyframes pisca-pisca {
+    0% { opacity: 0; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }

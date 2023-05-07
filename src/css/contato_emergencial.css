@@ -35,10 +35,6 @@ iframe{
   }
 }
  
-
-
-
-
 #sos {
     width: 100px;
     height: 90px;
@@ -66,6 +62,30 @@ iframe{
     width: 80%;
     margin-bottom: 20px;
   }
+
+  
+#emergencia {
+  position: absolute;
+  font-size: 35pt;
+  margin: 420px -1100px;
+  width: 1000px;
+  height: 70px;
+  cursor: pointer;
+  background-color: hsl(0, 100%, 50%);
+  color: hsl(0, 0%, 80%);
+  border: 0;
+  border-radius: 20px;
+  transition: 0.3s;
+  justify-content: center;
+}
+
+#emergencia:hover {
+  font-size: 20pt;
+  background-color: hsl(0, 100%, 61%);
+  color: hsl(0, 0%, 80%);
+  border: 1px solid hsl(0, 0%, 80%);
+  transform: scale(1.1);
+}
   
   @media screen and (min-width: 768px) {
     .container {
