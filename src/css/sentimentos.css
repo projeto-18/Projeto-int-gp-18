@@ -30,11 +30,72 @@ aside {
     height: 50px;
 }
 
+#image1{
+
+}
+
+.sentimentos{
+    align-items: center;
+    justify-content: center;
+}
+
+#image1:hover{
+    width:250px;
+    color: gray;
+}
+
+#image2:hover{
+    width:250px;
+    color: gray;
+}
+
+#image3:hover{
+    width:250px;
+    color: gray;
+}
+
+#image4:hover{
+    width:250px;
+    color: gray;
+}
+
+#image5:hover{
+    width:250px;
+    color: gray;
+}
+
+#image6:hover{
+    width:250px;
+    color: gray;
+}
+
 #conteudo-esquerdo {
     flex: 1 1 200px;
     display: flex;
     flex-flow: column wrap;
 }
+h2{
+    font-size: 3em;    
+    
+    margin: auto;
+
+}
+
+.botão{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+#botão{
+    width: 300px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: hsl(133, 41%, 31%);
+}
+
 
 #nometela {
     margin-top: -50px;
