@@ -63,6 +63,37 @@ body {
     margin: 10px;
   }
 
+  #image1:hover{
+    height: 220px;
+    width: 220px;
+  }
+
+  #image2:hover{
+    height: 220px;
+    width: 220px;
+  }
+
+  #image3:hover{
+    height: 220px;
+    width: 220px;
+  }
+
+#image4:hover{
+    height: 220px;
+    width: 220px;
+  }
+    
+  #image5:hover{
+    height: 220px;
+    width: 220px;
+  }
+
+  #image6:hover{
+    height: 220px;
+    width: 220px;
+  }
+  
+
   #titulo {
     display: flex;
     align-items: center;
