@@ -9,6 +9,7 @@
 
 body {
     background: hsl(46.3, 100%, 91%);
+    background: hsl(47, 87%, 45%);
     display: flex;
     flex-wrap: wrap;
     margin: 3px;
@@ -71,29 +72,29 @@ main {
 #sentimentos {
   display: flex;
   flex-direction: row;
-  width: 150px;
-  height: 150px;
-  margin: -100px -400px 0px;
-  gap: 50px;
+  width: 130px;
+  height: 130px;
+  margin: -150px -400px 0px;
+  gap: 200px;
 }
 
 #sentimentos2 {
   display: flex;
   flex-direction: row;
-  width: 150px;
-  height: 150px;
+  width: 130px;
+  height: 130px;
   margin: 50px -400px 0px;
-  gap: 50px;
+  gap: 200px;
 }
 
 .botao-salvar {
   position: absolute;
-  margin: -30px 200px 0px;
+  margin: 20px -250px 0px;
 }
 
 #register_button {
   font-size: 15pt;
-  width: 200px;
+  width: 500px;
   height: 50px;
   cursor: pointer;
   background-color: hsl(133, 41%, 31%);
