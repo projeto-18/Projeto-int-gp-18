@@ -14,20 +14,22 @@ body {
     margin: 3px;
     flex: 1 1 100vw;
 }
+#container-despertador {
+    align-items: center;
+    justify-content: center;
+}
 
 #meu-despertador {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    margin: 5px auto 200px;
-    /*margin-top: 5px;*/
-    width: 250px;
+position: absolute;
+display: flex;
+flex-direction: column;
+margin: 0px 6px 0px;
 }
 
 #relogio {
     align-items: center;
     justify-content: center;
-    margin: 0px 20px 40px;
+    margin: 0px 10px 40px;
 }
 
 .titulo-despertador {
@@ -40,13 +42,13 @@ body {
 
 .despertador {
     display: flex;
-    flex-direction: column;
+    background-color: hsl(46.3, 70%, 91%);
     align-items: center;
     justify-content: center;
-    background-color: hsl(46.3, 70%, 91%);
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
+    flex-direction: column;
     border-radius: 20px;
-    margin: 0px;
+    width: 250px;
 }
 
 .despertador h3 {

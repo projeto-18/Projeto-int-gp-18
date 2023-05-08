@@ -1,72 +1,82 @@
 @import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Fraunces:wght@700&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Boogaloo', cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Boogaloo', cursive;
 }
 
 body {
-    background: hsl(46.3, 100%, 91%);
-    background: hsl(47, 87%, 45%);
-    display: flex;
-    flex-wrap: wrap;
-    margin: 3px;
-    flex: 1 1 100vw;
+  background: hsl(46.3, 100%, 91%);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3px;
+  flex: 1 1 100vw;
 }
 
 nav,
 main {
-    background: hsl(46.3, 100%, 91%);
-    display: flex;
-    margin: 3px;
+  background: hsl(46.3, 100%, 91%);
+  display: flex;
+  margin: 3px;
 }
 
 nav {
-    flex: 1 1 100px;
-    align-items: center;
-    justify-content: center;
+  flex: 1 1 100px;
+  align-items: center;
+  justify-content: center;
 }
 
 main {
-    flex: 20 1 500px;
-    height: calc(100vh - 224px);
-    align-items: center;
-    justify-content: center;
-    /* conta: 100% tamanho vertical - (Header (100px) + Footer(100px) + Margin (((3px+3px)/4)=24)) = (100 + 100 + 24 =224) */
+  flex: 20 1 500px;
+  height: calc(100vh - 224px);
+  align-items: center;
+  justify-content: center;
+  /* conta: 100% tamanho vertical - (Header (100px) + Footer(100px) + Margin (((3px+3px)/4)=24)) = (100 + 100 + 24 =224) */
 }
 
 #titulo {
-    font-size: 35px;
-    display: flex;
-    color: hsl(133, 41%, 31%);
-    margin: 3px;
-    flex: 1 1 100vw;
-    height: 50px;
+  font-size: 35px;
+  display: flex;
+  color: hsl(133, 41%, 31%);
+  margin: 3px;
+  flex: 1 1 100vw;
+  height: 50px;
 }
 
 .titulo i {
   position: absolute;
-    font-size: 30px;
-    margin: 6px 40px;
+  font-size: 30px;
+  margin: 6px 40px;
 }
 
 .bi-menu-button-wide-fill {
-    position: absolute;
-    margin: 30px;
+  position: absolute;
+  margin: 30px;
 }
 
 #conteudo-esquerdo {
   display: flex;
-  width: 300px;
+  width: 280px;
+  height: 300px;
   flex-flow: column wrap;
 }
 
 .iframe {
   margin-top: 0px;
   width: -300px;
+  height: 250px;
+}
+
+.hora {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
   height: 240px;
+  width: 280px;
+  margin-top: 470px;
+  margin-left: -292px;
 }
 
 #sentimentos {
@@ -110,12 +120,13 @@ main {
   color: hsl(133, 41%, 31%);
   border: 1px solid hsl(0, 0%, 80%);
   transform: scale(1.1);
-} 
+}
 
 #image:hover {
-  height: 170px;
-  background-color:hsl(46, 100%, 85%);
-  color:  hsl(133, 41%, 31%);;
+  height: 150px;
+  background-color: hsl(46, 100%, 85%);
+  color: hsl(133, 41%, 31%);
+  ;
 }
 
 #emergencia {
@@ -329,6 +340,3 @@ body {
     }
 }
 */
-
-
-
