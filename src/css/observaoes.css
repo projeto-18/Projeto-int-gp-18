@@ -36,16 +36,26 @@ aside {
     flex-flow: column wrap;
 }
 
+.iframe {
+    margin-top: 0px;
+    width: -300px;
+    height: 250px;
+  }
+  
+  .hora {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    height: 240px;
+    width: 280px;
+    margin-top: 470px;
+    margin-left: -292px;
+  }
 #nometela {
     margin-top: -50px;
     font-size: 40px;
     color: hsl(133, 41%, 31%);
     text-align: center;
-}
-#conteudo-direito {
-    flex: 1 1 200px;
-    display: flex;
-    flex-flow: column wrap;
 }
 
 nav {
