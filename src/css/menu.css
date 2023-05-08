@@ -36,7 +36,7 @@ main {
     margin: 6px -40px;
 }
 
-.bi-menu-button-wide-fill {
+.bi-bar-chart-line {
     position: absolute;
     margin: 300px;
 }
@@ -47,6 +47,7 @@ main {
     flex-flow: column wrap;
     margin-top: 10px;
 }
+
 
 .iframe {
     margin-top: -160px;
@@ -160,9 +161,4 @@ main {
     main {
         height: calc(100vh - 224px);
     }
-
-    /*aside {
-        height: calc(100vh - 224px);
-
-    }*/
 }

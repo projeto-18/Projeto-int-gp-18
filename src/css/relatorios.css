@@ -16,36 +16,10 @@ body {
 }
 
 nav,
-main,
-aside {
+main{
     background: hsl(46.3, 100%, 91%);
     display: flex;
     margin: 3px;
-}
-
-#titulo {
-    display: flex;
-    margin: 3px;
-    flex: 1 1 100vw;
-    height: 50px;
-}
-
-#conteudo-esquerdo {
-    flex: 1 1 200px;
-    display: flex;
-    flex-flow: column wrap;
-}
-
-#nometela {
-    margin-top: -50px;
-    font-size: 40px;
-    color: hsl(133, 41%, 31%);
-    text-align: center;
-}
-#conteudo-direito {
-    flex: 1 1 200px;
-    display: flex;
-    flex-flow: column wrap;
 }
 
 nav {
@@ -62,19 +36,49 @@ main {
     /* conta: 100% tamanho vertical - (Header (100px) + Footer(100px) + Margin (((3px+3px)/4)=24)) = (100 + 100 + 24 =224) */
 }
 
-aside {
+#titulo {
+    display: flex;
+    margin: 3px;
+    flex: 1 1 100vw;
+    height: 50px;
+}
+
+.titulo i {
+    font-size: 50px;
+    margin: 16px 0px;
+}
+
+#conteudo-esquerdo {
     flex: 1 1 200px;
-    align-items: center;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#emergencia {
+    position: absolute;
+    font-size: 35pt;
+    margin: 420px -1100px;
+    width: 1000px;
+    height: 70px;
+    cursor: pointer;
+    background-color: hsl(0, 100%, 50%);
+    color: hsl(0, 0%, 80%);
+    border: 0;
+    border-radius: 20px;
+    transition: 0.3s;
     justify-content: center;
+}
+
+#emergencia:hover {
+    font-size: 20pt;
+    background-color: hsl(0, 100%, 61%);
+    color: hsl(0, 0%, 80%);
+    border: 1px solid hsl(0, 0%, 80%);
+    transform: scale(1.1);
 }
 
 @media only screen and (max-width: 923px) {
     main {
         height: calc(100vh - 224px);
-    }
-
-    aside {
-        height: calc(100vh - 224px);
-
     }
 }

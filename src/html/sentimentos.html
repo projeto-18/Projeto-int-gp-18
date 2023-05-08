@@ -5,32 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="MinhaSaude">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>MinhaSaúde</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="../css/cabecalho.css" rel="stylesheet" type="text/css" />
     <link href="../css/sentimentos.css" rel="stylesheet" type="text/css" />
+    <link href="../css/rodape.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-    <header id="cabecalho" style="text-align: center;">
-        <div class="container">
-          <div class="item"><img src="../assets/image/Logo.png" alt="logo" id="logo"></div>
-          <div class="item1"><h1>MinhaSaúde</h1></div>
-        </div>
-      </header>
-    <hr>
-    <section id="titulo" style="text-align: center;">
-        <div class="container2">
-            <div class="i1"><img id="blis" src="../assets/image/blissful.png" alt="sos"></div>
-            <div class="i2"><h2>Meus Sentimentos</h2></div>
-        </div>
-    </section>
-    
-    <div class="smiles">
-        <div class="cont">
-            <img class="smile-img" src="../assets/image/Smile_Great.png" alt="perfeito">
-            <img class="smile-img" src="../assets/image/Smile_Good.png" alt="muito bom">
-            <img class="smile-img" src="../assets/image/Smile_Okay.png" alt="bom">
-
     <header>
         <li><img id="logo" src="../assets/image/Logo.png" alt="MinhaSaúde"></li>
 
@@ -39,85 +26,74 @@
         </nav>
     </header>
     <section id="titulo">
-        <nav>Meus Sentimentos</nav>
+        <nav>
+            <div class="titulo">
+                <i class="bi bi-menu-button-wide-fill"></i>
+                Meus Sentimentos
+            </div> 
+        </nav>
     </section>
     <section id="conteudo-esquerdo">
-        <nav></nav>
+        <nav class="superior">
+            <div class="iframe">
+                <div class="carrosel">
+                    <iframe src="../html/frase_do_dia.html" frameborder="0" width="280" height="300" scolling = "no" style="border:none;" allowfullscreen="" loading="lazy" >
+                    </iframe>
+                </div>
+            </div>
+        </nav>
         <nav>
-            
+            <iframe class="hora" src="hora.html" frameborder="0"width="280" height="300"></iframe>
         </nav>
     </section>
     <main>
         <section>
-            <input type="image" id="image" width="250px" alt="Não muito bem" src="Emojis/Emoji1.jpeg">
-                <input type="image" id="image" width="250px" alt="Bem" src="Emojis/Emoji2.jpeg">
-                <input type="image" id="image" width="250px" alt="Muito bem" src="Emojis/Emoji3.jpeg">
-                <input type="image" id="image" width="250px" alt="Com raiva" src="Emojis/Emoji4.jpeg">
-                <input type="image" id="image" width="250px" alt="Triste" src="Emojis/Emoji5.jpeg">
-                <input type="image" id="image" width="250px" alt="Feliz" src="Emojis/Emoji6.jpeg">
+            <div id="sentimentos">
+                <img src="../assets/image/Smile_Great.png" alt="Estou feliz" class="imagem-clicavel" id="image" data-id="smile-great">
 
-               
+                <img src="../assets/image/Smile_Good.png" alt="Estou feliz" class="imagem-clicavel" id="image" data-id="smile-great">
 
-                
+                <img src="../assets/image/Smile_Okay.png" alt="Estou feliz" class="imagem-clicavel" id="image" data-id="smile-great">
+            </div>
+            <div id="sentimentos2">
+                <img src="../assets/image/Smile_NotGreat.png" alt="Estou feliz" class="imagem-clicavel" id="image" data-id="smile-great">
 
-                
-            </h1>
+                <img src="../assets/image/Smile_Bad.png" alt="Estou feliz" class="imagem-clicavel" id="image" data-id="smile-great">
+
+                <img src="../assets/image/Smile_VeryBad.png" alt="Estou feliz" class="imagem-clicavel" id="image" data-id="smile-great">
+            </div>
+            <div class="botao-salvar">
+                <input type="submit" id="register_button" name="acao" value="Salvar " />
+            </div>
         </section>
     </main>
-    <section id="conteudo-direito">
-        <aside></aside>
-    </section>
+    <div>
+        <a href="../html/emergencia.html"><input type="submit" id="emergencia" name="acao" value="Emergência" /></a>
+    </div>
     <footer>
         <nav>
             <ul id="container">
-                <li><img id="navegacao" src="../assets/image/home.png" alt="HomePage">
+                <li><a href="../html/menu.html"><img id="navegacao" src="../assets/image/home.png" alt="HomePage"></a>
                 </li>
-                <li><img id="navegacao" src="../assets/image/document.png" alt="HomePage">
+                <li>
+                    <a href="#"><img id="navegacao" src="../assets/image/document.png" alt="HomePage"></a>
                 </li>
-                <li><img id="navegacao" src="../assets/image/medical.png" alt="HomePage">
+                <li>
+                    <a href="#"><img id="navegacao" src="../assets/image/medical.png" alt="HomePage"></a>
                 </li>
-                <li><img id="navegacao" src="../assets/image/heart.png" alt="HomePage">
+                <li>
+                    <a href="#"><img id="navegacao" src="../assets/image/heart.png" alt="HomePage"></a>
                 </li>
-                <li><img id="navegacao" src="../assets/image/help.png" alt="HomePage">
+                <li>
+                    <a href="#"><img id="navegacao" src="../assets/image/help.png" alt="HomePage"></a>
                 </li>
-                <li><img id="navegacao" src="../assets/image/down.png" alt="HomePage">
+                <li>
+                    <a href="#"><img id="navegacao" src="../assets/image/down.png" alt="HomePage"></a>
                 </li>
             </ul>
         </nav>
     </footer>
 
+</body>
 
-        </div>
-    </div>
-        
-       
-
-       
-       
-        <div id="button"><input type="button" value="Salvar/Alterar" id="botao" onclick="salvar()"></div>
-        
-
-        <div id="foot">
-            <div class="footer-container">
-                <footer>
-                    <nav>
-                        <ul id="container">
-                            <li><img id="navegacao" src="../assets/image/home.png" alt="HomePage">
-                            </li>
-                            <li><img id="navegacao" src="../assets/image/document.png" alt="HomePage">
-                            </li>
-                            <li><img id="navegacao" src="../assets/image/medical.png" alt="HomePage">
-                            </li>
-                            <li><img id="navegacao" src="../assets/image/heart.png" alt="HomePage">
-                            </li>
-                            <li><img id="navegacao" src="../assets/image/help.png" alt="HomePage">
-                            </li>
-                            <li><img id="navegacao" src="../assets/image/down.png" alt="HomePage">
-                            </li>
-                        </ul>
-                    </nav>
-                </footer>
-            </div>
-        </div>
-    </body>
 </html>

@@ -66,21 +66,21 @@ nav {
     border-radius: 15px;
   }
     
-  .iframe {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    transform: translateX(0);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 50%;
-    transform: translateX(-50%);
+  
+.iframe {
+    margin-top: 0px;
+    width: -300px;
+    height: 250px;
   }
   
-  iframe{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+  .hora {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    height: 240px;
+    width: 280px;
+    margin-top: 470px;
+    margin-left: -292px;
   }
   
 
@@ -92,10 +92,28 @@ main {
     /* conta: 100% tamanho vertical - (Header (100px) + Footer(100px) + Margin (((3px+3px)/4)=24)) = (100 + 100 + 24 =224) */
 }
 
-aside {
-    flex: 1 1 200px;
-    align-items: center;
+
+#emergencia {
+    position: absolute;
+    font-size: 35pt;
+    margin: 420px -1100px;
+    width: 1000px;
+    height: 70px;
+    cursor: pointer;
+    background-color: hsl(0, 100%, 50%);
+    color: hsl(0, 0%, 80%);
+    border: 0;
+    border-radius: 20px;
+    transition: 0.3s;
     justify-content: center;
+}
+
+#emergencia:hover {
+    font-size: 20pt;
+    background-color: hsl(0, 100%, 61%);
+    color: hsl(0, 0%, 80%);
+    border: 1px solid hsl(0, 0%, 80%);
+    transform: scale(1.1);
 }
 
 @media only screen and (max-width: 923px) {

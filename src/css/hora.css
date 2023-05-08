@@ -14,68 +14,116 @@ body {
     margin: 3px;
     flex: 1 1 100vw;
 }
-
-nav,
-main {
-    background: hsl(46.3, 100%, 91%);
-    display: flex;
-    margin: 3px;
-}
-
-nav {
-    flex: 1 1 200px;
+#container-despertador {
     align-items: center;
     justify-content: center;
 }
 
-main {
-    flex: 20 1 500px;
-    height: calc(100vh - 224px);
-    align-items: center;
-    justify-content: center;
-    /* conta: 100% tamanho vertical - (Header (100px) + Footer(100px) + Margin (((3px+3px)/4)=24)) = (100 + 100 + 24 =224) */
+#meu-despertador {
+position: absolute;
+display: flex;
+flex-direction: column;
+margin: 0px 6px 0px;
 }
 
-#titulo {
-    font-size: 35px;
-    display: flex;
+#relogio {
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10px 40px;
+}
+
+.titulo-despertador {
+    position: absolute;
+    margin: 10px auto 0px;
+    font-size: 25px;
+    font-weight: bold;
     color: hsl(133, 41%, 31%);
-    margin: 3px;
-    flex: 1 1 100vw;
-    height: 50px;
 }
 
-.titulo i {
-    font-size: 30px;
-    margin: 6px -50px;
-}
-
-.bi-alarm {
-    position: absolute;
-    margin: 300px;
-}
-
-#conteudo-esquerdo {
+.despertador {
     display: flex;
-    width: 300px;
-    flex-flow: column wrap;
-}
-
-.iframe {
-    margin-top: 0px;
-    width: -300px;
-    height: 250px;
-  }
-  
-  .hora {
-    position: absolute;
+    background-color: hsl(46.3, 70%, 91%);
     align-items: center;
     justify-content: center;
-    height: 240px;
-    width: 280px;
-    margin-top: 470px;
-    margin-left: -292px;
-  }
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
+    flex-direction: column;
+    border-radius: 20px;
+    width: 250px;
+}
+
+.despertador h3 {
+    font-size: 30pt;
+    display: flex;
+    flex-direction: column;
+    color: hsl(133, 41%, 31%);
+    padding: 10px 25px;
+    gap: 10px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
+    height: fit-content;
+    margin: 10px auto 30px;
+}
+
+.despertador .content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.content.disable {
+    cursor: no-drop;
+}
+
+.despertador .content .controls {
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin: -40px auto 10px;
+    height: 40px;
+    width: 80px;
+}
+
+.content.disable .controls {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.despertador .content select {
+    font-size: 15px;
+    font-weight: bold;
+    background: transparent;
+    color: hsl(133, 41%, 31%);
+    border: none;
+    margin: 20px 20px;
+}
+
+.despertador .content select option {
+    font-weight: bold;
+    color: hsl(132, 83%, 14%);
+    background: transparent;
+    border: none;
+    padding: 5px;
+    width: 100%;
+}
+
+.despertador button {
+    font-size: 20pt;
+    background-color: hsl(133, 41%, 31%);
+    color: hsl(0, 0%, 80%);
+    border: none;
+    border-radius: 20px;
+     cursor: pointer;       
+     padding: 5px;
+    transition: 0.3s;
+    width: 200px;
+    margin: 10px;
+}
+
+
+
+
+
 /*
 #meu-despertador {
     display: flex;
@@ -188,31 +236,3 @@ main {
     padding: 10px;
 }
 */
-#emergencia {
-    position: absolute;
-    font-size: 35pt;
-    margin: 420px -1100px;
-    width: 1000px;
-    height: 70px;
-    cursor: pointer;
-    background-color: hsl(0, 100%, 50%);
-    color: hsl(0, 0%, 80%);
-    border: 0;
-    border-radius: 20px;
-    transition: 0.3s;
-    justify-content: center;
-}
-
-#emergencia:hover {
-    font-size: 20pt;
-    background-color: hsl(0, 100%, 61%);
-    color: hsl(0, 0%, 80%);
-    border: 1px solid hsl(0, 0%, 80%);
-    transform: scale(1.1);
-}
-
-@media only screen and (max-width: 923px) {
-    main {
-        height: calc(100vh - 224px);
-    }
-}

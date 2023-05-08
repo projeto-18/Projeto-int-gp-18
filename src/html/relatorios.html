@@ -15,6 +15,8 @@
     <link href="../css/cabecalho.css" rel="stylesheet" type="text/css" />
     <link href="../css/relatorios.css" rel="stylesheet" type="text/css" />
     <link href="../css/rodape.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
 </head>
 
 <body>
@@ -26,43 +28,94 @@
         </nav>
     </header>
     <section id="titulo">
-        <nav>titulo da pagina</nav>
+        <nav>
+            <div class="titulo">
+                <i class="bi bi-bar-chart-line"></i>
+                Relatório com Gráfico
+            </div> 
+        </nav>
     </section>
     <section id="conteudo-esquerdo">
         <nav>NÃO FAZER NADA AQUI</nav>
         <nav>
-            NÃO FAZER NADA AQUI
+            <iframe class="hora" src="hora.html" frameborder="0"width="280" height="300"></iframe>
         </nav>
     </section>
     <main>
-        <section>
-            <h1 id="nometela">
-                AQUI VAI FICAR SEU CÓDIGO
-            </h1>
-        </section>
+        <div style="width: 30%;">
+            <canvas id="myChart"></canvas>
+        </div>
+        <script>
+            // Dados do gráfico
+            var data = {
+                labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio'],
+                datasets: [{
+                    label: 'Vendas',
+                    data: [1200, 1500, 900, 1800, 2000],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255,99,132,1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            };
+    
+            // Opções do gráfico
+            var options = {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            };
+    
+            // Criação do gráfico
+            var ctx = document.getElementById('myChart').getContext('2d');
+            var myChart = new Chart(ctx, {
+                type: 'bar',
+                data: data,
+                options: options
+            });
+        </script>
     </main>
-    <section id="conteudo-direito">
-        <aside>NÃO FAZER NADA AQUI</aside>
-    </section>
+    <div>
+        <a href="../html/emergencia.html"><input type="submit" id="emergencia" name="acao" value="Emergência" /></a>
+    </div>
     <footer>
         <nav>
             <ul id="container">
-                <li><img id="navegacao" src="../assets/image/home.png" alt="HomePage">
+                <li><a href="../html/menu.html"><img id="navegacao" src="../assets/image/home.png" alt="HomePage"></a>
                 </li>
-                <li><img id="navegacao" src="../assets/image/document.png" alt="HomePage">
+                <li>
+                    <a href="#"><img id="navegacao" src="../assets/image/document.png" alt="HomePage"></a>
                 </li>
-                <li><img id="navegacao" src="../assets/image/medical.png" alt="HomePage">
+                <li>
+                    <a href="#"><img id="navegacao" src="../assets/image/medical.png" alt="HomePage"></a>
                 </li>
-                <li><img id="navegacao" src="../assets/image/heart.png" alt="HomePage">
+                <li>
+                    <a href="#"><img id="navegacao" src="../assets/image/heart.png" alt="HomePage"></a>
                 </li>
-                <li><img id="navegacao" src="../assets/image/help.png" alt="HomePage">
+                <li>
+                    <a href="#"><img id="navegacao" src="../assets/image/help.png" alt="HomePage"></a>
                 </li>
-                <li><img id="navegacao" src="../assets/image/down.png" alt="HomePage">
+                <li>
+                    <a href="#"><img id="navegacao" src="../assets/image/down.png" alt="HomePage"></a>
                 </li>
             </ul>
         </nav>
     </footer>
-
 </body>
 
 </html>

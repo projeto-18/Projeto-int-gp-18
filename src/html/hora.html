@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MinhaSaude">
+    <title>MinhaSaúde</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link href="../css/cabecalho.css" rel="stylesheet" type="text/css" />
+    <link href="../css/hora.css" rel="stylesheet" type="text/css" />
+    <link href="../css/rodape.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <nav id="meu-despertador">
+        <nav id="relogio">
+            <div class="titulo-despertador">
+                <i id="relogio" class="bi bi-alarm"></i>
+                Meu Despertador
+            </div> 
+        </nav>
+        <section id="container-despertador">
+            <div class="despertador">
+                <h3>00:00:00 PM</h3>
+                <div class="content">
+                    <div class="controls">
+                        <select>
+                            <option value="Hour" selected disabled hidden>Horas</option>
+                        </select>
+                    </div>
+        
+                    <div class="controls">
+                        <select>
+                            <option value="Minute" selected disabled hidden>Minutos</option>
+                        </select>
+                    </div>
+        
+                    <div class="controls">
+                        <select>
+                            <option value="AM/PM" selected disabled hidden>AM/PM</option>
+                        </select>
+                    </div>
+                </div>
+                <button>Ativar Alarme</button>
+            </div>
+        </section>
+    </nav>
+    <script src="../js/clock.js"></script>
+</body>
+</html>

@@ -1,6 +1,162 @@
 @import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Fraunces:wght@700&display=swap');
 
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Boogaloo', cursive;
+}
+
+body {
+  background: hsl(46.3, 100%, 91%);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3px;
+  flex: 1 1 100vw;
+}
+
+nav,
+main {
+  background: hsl(46.3, 100%, 91%);
+  display: flex;
+  margin: 3px;
+}
+
+nav {
+  flex: 1 1 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  flex: 20 1 500px;
+  height: calc(100vh - 224px);
+  align-items: center;
+  justify-content: center;
+  /* conta: 100% tamanho vertical - (Header (100px) + Footer(100px) + Margin (((3px+3px)/4)=24)) = (100 + 100 + 24 =224) */
+}
+
+#titulo {
+  font-size: 35px;
+  display: flex;
+  color: hsl(133, 41%, 31%);
+  margin: 3px;
+  flex: 1 1 100vw;
+  height: 50px;
+}
+
+.titulo i {
+  position: absolute;
+  font-size: 30px;
+  margin: 6px 40px;
+}
+
+.bi-menu-button-wide-fill {
+  position: absolute;
+  margin: 30px;
+}
+
+#conteudo-esquerdo {
+  display: flex;
+  width: 280px;
+  height: 300px;
+  flex-flow: column wrap;
+}
+
+.iframe {
+  margin-top: 0px;
+  width: -300px;
+  height: 250px;
+}
+
+.hora {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  height: 240px;
+  width: 280px;
+  margin-top: 470px;
+  margin-left: -292px;
+}
+
+#sentimentos {
+  display: flex;
+  flex-direction: row;
+  width: 130px;
+  height: 130px;
+  margin: -150px -400px 0px;
+  gap: 200px;
+}
+
+#sentimentos2 {
+  display: flex;
+  flex-direction: row;
+  width: 130px;
+  height: 130px;
+  margin: 50px -400px 0px;
+  gap: 200px;
+}
+
+.botao-salvar {
+  position: absolute;
+  margin: 20px -250px 0px;
+}
+
+#register_button {
+  font-size: 15pt;
+  width: 500px;
+  height: 50px;
+  cursor: pointer;
+  background-color: hsl(133, 41%, 31%);
+  color: hsl(0, 0%, 80%);
+  border: 0;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+#register_button:hover {
+  font-size: 20pt;
+  background-color: hsl(0, 0%, 80%);
+  color: hsl(133, 41%, 31%);
+  border: 1px solid hsl(0, 0%, 80%);
+  transform: scale(1.1);
+}
+
+#image:hover {
+  height: 150px;
+  background-color: hsl(46, 100%, 85%);
+  color: hsl(133, 41%, 31%);
+  ;
+}
+
+#emergencia {
+  position: absolute;
+  font-size: 35pt;
+  margin: 420px -1100px;
+  width: 1000px;
+  height: 70px;
+  cursor: pointer;
+  background-color: hsl(0, 100%, 50%);
+  color: hsl(0, 0%, 80%);
+  border: 0;
+  border-radius: 20px;
+  transition: 0.3s;
+  justify-content: center;
+}
+
+#emergencia:hover {
+  font-size: 20pt;
+  background-color: hsl(0, 100%, 61%);
+  color: hsl(0, 0%, 80%);
+  border: 1px solid hsl(0, 0%, 80%);
+  transform: scale(1.1);
+}
+
+
+/*
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Fraunces:wght@700&display=swap');
+
+* {
     font-family: 'Boogaloo', cursive;
 }
 
@@ -63,6 +219,37 @@ body {
     margin: 10px;
   }
 
+  #image:hover{
+    height: 220px;
+    width: 220px;
+  }
+/*
+  #image2:hover{
+    height: 220px;
+    width: 220px;
+  }
+
+  #image3:hover{
+    height: 220px;
+    width: 220px;
+  }
+
+#image4:hover{
+    height: 220px;
+    width: 220px;
+  }
+    
+  #image5:hover{
+    height: 220px;
+    width: 220px;
+  }
+
+  #image6:hover{
+    height: 220px;
+    width: 220px;
+  }
+  */
+/*
   #titulo {
     display: flex;
     align-items: center;
@@ -86,104 +273,17 @@ body {
     width: 80%;
     margin-bottom: 20px; 
 }
-  
-  @media screen and (min-width: 768px) {
-    .container2{
-        flex-direction: row;
-        justify-content: center;
-    }
-    .i1 {
-        width: 20%;
-        margin-bottom: 0;
-        margin-right: 20px;
-    }
-    
-    .i2 {
-        width: 80%;
-        margin-bottom: 0;
-    }
-  }
-  
 
-  h1{
-    font-size: 5em;
-    color: rgba(40, 97, 2, 0.884);
-  }
-  hr{
-    margin-top: 30px;
-    height: 2px; /* Set the height of the line */
-    border: none; /* Remove the default border */
-    background-color: #0f010173; /* Set the color of the line */
-  }
-  
-  h2{
-    color: rgba(0, 0, 0, 0.596);
-    font-size: 2.5em;
-  }
-
-  #logo{ 
-    margin-right: 10px; 
-    width: 180px;
-    height: 210px;
-    margin-top: 50px;
-  }
-
-
-
-  .smile-img{
-    width: 100px;
-  }
-
-
-  #button {
-    padding-top: 0px;
+#conteudo-esquerdo {
+    flex: 1 1 200px;
     display: flex;
-    max-width: 280px;
-    height: 80px;
-    background: white;
-    margin: auto;
-    border-radius: 15px;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.541);
-    border: none;
-    margin-top: 50px;
-    border-radius: 35px;
-    margin-bottom: 100px;
-  }
-  
-  #botao{
-    width: 280px;
-    height: 80px;
-    border-radius: 35px;
-    font-size: 2em;
-    background-color: aquamarine;
-  }
+    flex-flow: column wrap;
+}
 
-  #botao:hover{
-    background-color: blue;
-    color: white;
-    cursor: pointer;
-  }
-
-
-  #foot {
-    padding-top: 0px;
-    display: flex;
-    width: 110%;
-    max-width: 100%;
-    height: 110px;
-    background: hsl(46.3, 100%, 91%);
-    border-radius: 15px;
-    border: none;
-    margin-top: 10px;
-    border-radius: 35px;
-    margin-bottom: 10px;
-    position: relative;
-    margin-left: 50%vw;
-    flex-direction: row;
-  }
-  
-  ul {
-    list-style: none;
+#nometela {
+    margin-top: -50px;
+    font-size: 40px;
+    color: hsl(133, 41%, 31%);
     text-align: center;
     display: flex;
     justify-content: center;
@@ -239,7 +339,4 @@ body {
         
     }
 }
-
-
-
-
+*/
