@@ -33,7 +33,7 @@ main {
 
 .titulo i {
     font-size: 30px;
-    margin: 6px -40px;
+    margin: 6px 9px;
 }
 
 .bi-bar-chart-line {
@@ -56,10 +56,11 @@ main {
 }
 
 #iframe-des {
-    width: 350px;
+    width: 360px;
     height: 270px;
     border: none;
     overflow: hidden;
+    margin-left: 40px;
     
 }
 
