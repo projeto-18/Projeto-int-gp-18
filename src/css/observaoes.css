@@ -24,6 +24,9 @@ aside {
 }
 
 #titulo {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
     display: flex;
     margin: 3px;
     flex: 1 1 100vw;
@@ -31,31 +34,57 @@ aside {
 }
 
 #conteudo-esquerdo {
-    flex: 1 1 200px;
     display: flex;
+    width: 350px;
     flex-flow: column wrap;
+    margin-top: 10px;
 }
 
+
 .iframe {
-    margin-top: 0px;
-    width: -300px;
-    height: 250px;
-  }
-  
-  .hora {
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-    height: 240px;
-    width: 280px;
-    margin-top: 470px;
-    margin-left: -292px;
-  }
+    margin-top: -160px;
+    width: 300px;
+    height: 380px;
+    margin-left: 20px;
+}
+
+#iframe-des {
+    width: 360px;
+    height: 270px;
+    border: none;
+    overflow: hidden;
+    margin-left: 20px;
+    
+}
 #nometela {
     margin-top: -50px;
     font-size: 40px;
     color: hsl(133, 41%, 31%);
     text-align: center;
+}
+
+#observacoes{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.5em;
+    text-indent: 5px;
+    overflow: auto; /* adicionado para habilitar barra de rolagem */
+    word-wrap: break-word;
+    word-break: break-all;
+
+
+}
+
+.input {
+    width: 450px;
+    height: 50px;
+    text-indent: 5px;
+    overflow: auto; /* adicionado para habilitar barra de rolagem */
+    word-wrap: break-word;
+    word-break: break-all;
+
+
 }
 
 nav {
@@ -65,7 +94,7 @@ nav {
 }
 
 main {
-    flex: 20 1 500px;
+    flex: 20 1 300px;
     height: calc(100vh - 224px);
     align-items: center;
     justify-content: center;

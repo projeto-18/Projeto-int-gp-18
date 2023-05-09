@@ -29,20 +29,31 @@
         <h2>Observações do usuário</h2>
     </section>
     <section id="conteudo-esquerdo">
-        <nav></nav>
-        <nav>
-            
+        <nav class="superior">
+            <div class="iframe">
+                <div class="carrosel">
+                    <iframe src="../html/frase_do_dia.html" frameborder="0" width="280" height="300" scolling = "no" style="border:none;" allowfullscreen="" loading="lazy" >
+                    </iframe>
+                </div>
+            </div>
         </nav>
+        
+            <div class="iframe">
+                <iframe id="iframe-des" src="hora.html" frameborder="0"></iframe>
+            </div>
+        
     </section>
     <main>
         <section>
-            <h1 id="Observações">
+            <div id="observacoes">
                 <div>
                     <p>Coloque aqui seu desabafo. Vamos ajudar você.</p>
                     
                 </div>
-                                              
-                    <textarea rows="6"  maxlength="255" style="width: 32em;" id="Obervações" name="Observações"></textarea>
+                
+                <div>
+                    <input class="input" type="text" name="txt" id="txt">
+                </div>
 
                 <div class="botão">
                     <input type="submit" id="botão" name="Enviar">
@@ -50,7 +61,7 @@
                     
                 </div>
                 
-            </h1>
+            </div>
         </section>
     </main>
     <div>

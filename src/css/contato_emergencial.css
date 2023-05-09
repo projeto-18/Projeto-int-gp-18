@@ -9,28 +9,34 @@ body {
   
 }
 
+
 #conteudo-esquerdo {
   display: flex;
-  width: 300px;
+  width: 200px;
+  height: 0px;
   flex-flow: column wrap;
+  margin-top: 10px;
 }
 
 
 .iframe {
-  margin-top: 0px;
-  width: -300px;
-  height: 250px;
+  margin-top: -160px;
+  width: 360px;
+  height: 270px;
+  margin-left: 20px;
+  position: relative;
 }
 
-.hora {
-  position: absolute;
-  align-items: center;
-  justify-content: center;
-  height: 240px;
-  width: 280px;
-  margin-top: 470px;
-  margin-left: -292px;
+#iframe-des {
+  width: 283px;
+  height: 255px;
+  border: none;
+  overflow: hidden;
+  margin-left: -378px;
+  margin-top: 302px;
 }
+  
+
   
 @media screen and (max-width: 767px) {
   .iframe {
@@ -46,31 +52,34 @@ body {
 }
  
 #sos {
-    width: 100px;
-    height: 90px;
+    width: 80px;
+    height: 70px;
     border-radius: 50%;
   }
 
   #cabecalho {
     display: flex;
     align-items: center;
+    justify-content: center;
+    margin-top: 0px;
   }
   
   .container {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin: auto;
+    margin-top: 0px;
+    
   }
   
   .item {
     width: 80%;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
   }
   
   .item1 {
     width: 80%;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
   }
 
   
@@ -119,6 +128,7 @@ body {
   #titulo {
     display: flex;
     align-items: center;
+    margin-bottom: 0px;
   }
   
   .container2 {
@@ -127,7 +137,7 @@ body {
     align-items: center;
     margin: auto;
     margin-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
   }
   
   .i1 {
@@ -159,7 +169,7 @@ body {
   
 
   h1{
-    font-size: 3em;
+    font-size: 2em;
     color: rgba(40, 97, 2, 0.884);
   }
   hr{
@@ -171,21 +181,22 @@ body {
   
   h2{
     color: rgba(0, 0, 0, 0.596);
-    font-size: 2.5em;
+    font-size: 1.5em;
   }
 
   #logo{ 
     margin-right: 10px; 
-    width: 150px;
-    height: 130px;
+    width: 90px;
+    height: 80px;
     margin-top: 10px;
   }
 
   .formulario-container{
+    font-size: 0.6em;
     margin-bottom: 50px;
     display: flex;
-    max-width: 600px;
-    height: 250px;
+    max-width: 400px;
+    height: 230px;
     background: white;
     margin: auto;
     border-radius: 15px;
@@ -193,10 +204,11 @@ body {
   }
   
   .formulario-container2{
+    font-size: 0.6em;
     padding-top: 0px;
     display: flex;
-    max-width: 600px;
-    height: 250px;
+    max-width: 400px;
+    height: 230px;
     background: white;
     margin: auto;
     border-radius: 15px;
@@ -205,23 +217,25 @@ body {
   }
   
   #n1{
-    font-size: 1em;
+    font-size: 1.5em;
     width: 250px;
-    height: 40px;
+    height: 30px;
     margin-top: 20px;
     border-radius: 8px;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.733);
     border: none;
+    text-indent: 5px;
   }
 
   #n2{
-    font-size: 2em;
+    font-size: 1.5em;
     width: 250px;
     height: 40px;
     margin-top: 20px;
     border-radius: 8px;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.733);
     border: none;
+    text-indent: 5px;
   }
   #parente{
    
@@ -316,9 +330,9 @@ body {
   #foot {
     padding-top: 0px;
     display: flex;
-    width: 110%;
+    width: 100%;
     max-width: 100%;
-    height: 110px;
+    height: 80px;
     background: hsl(46.3, 100%, 91%);
     border-radius: 15px;
     border: none;
@@ -339,7 +353,7 @@ body {
   }
   
   .footer-container {
-    width: 120%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -356,7 +370,7 @@ body {
   footer {
     display: flex;
     background: hsl(46.3, 100%, 91%);
-    height: 100%;
+    height: 90%;
     border-radius: 35px;
     margin-left: -1%;
     max-width: 70%;

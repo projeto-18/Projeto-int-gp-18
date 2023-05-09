@@ -6,7 +6,7 @@
         <meta name="description" content="MinhaSaude">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>MinhaSaúde</title>
-        <link href="../css/contato_emergencial.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="../css/contato_emergencial.css">
     </head>
     <body>
         <header id="cabecalho" style="text-align: center;">
@@ -19,7 +19,7 @@
                 </div>
             </div>
         </header>
-        <hr>
+        
         <section id="titulo" style="text-align: center;">
             <div class="container2">
                 <div class="i1">
@@ -30,19 +30,21 @@
                 </div>
             </div>
         </section>
-        <section id="conteudo-esquerdo">
-            <nav class="superior">
+        <div id="conteudo-esquerdo">
+            <div class="superior">
                 <div class="iframe">
                     <div class="carrosel">
                         <iframe src="../html/frase_do_dia.html" frameborder="0" width="280" height="300" scolling = "no" style="border:none;" allowfullscreen="" loading="lazy" >
                         </iframe>
                     </div>
                 </div>
-            </nav>
-            <nav>
-                <iframe class="hora" src="hora.html" frameborder="0"width="280" height="300"></iframe>
-            </nav>
-        </section>
+            </div>
+            
+                <div class="iframe">
+                    <iframe id="iframe-des" src="hora.html" frameborder="0"></iframe>
+                </div>
+            
+        </div>
         <main>
             <div class="formulario-container">
                 <form

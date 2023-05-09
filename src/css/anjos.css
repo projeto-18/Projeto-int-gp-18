@@ -30,10 +30,31 @@ aside {
     height: 50px;
 }
 
-#conteudo-esquerdo {
-    flex: 1 1 200px;
+
+.iframe {
+    margin-top: -120px;
+    width: 300px;
+    height: 380px;
+    margin-left: 30px;
+   
+}
+
+#iframe-des {
+    width: 360px;
+    height: 380px;
+    border: none;
+    overflow: hidden;
+    margin-left: 10px;
+    
+}
+
+
+#menu-esq {
+    position: absolute;
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
+    margin: -180px 100px;
+    gap: 15px;
 }
 
 #nometela {

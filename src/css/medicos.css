@@ -16,82 +16,111 @@ body {
 }
 
 nav,
-main,
-aside {
+main {
     background: hsl(46.3, 100%, 91%);
     display: flex;
     margin: 3px;
 }
 
-
 #titulo {
+    font-size: 35px;
     display: flex;
+    color: hsl(133, 41%, 31%);
     margin: 3px;
     flex: 1 1 100vw;
     height: 50px;
 }
 
+.titulo i {
+    font-size: 30px;
+    margin: 6px 9px;
+}
+
+.bi-bar-chart-line {
+    position: absolute;
+    margin: 300px;
+}
+
 #conteudo-esquerdo {
-    flex: 1 1 200px;
     display: flex;
+    width: 350px;
     flex-flow: column wrap;
+    margin-top: 10px;
 }
 
-#nometela {
-    margin-top: -50px;
-    font-size: 40px;
-    color: hsl(133, 41%, 31%);
-    text-align: center;
-}
-#conteudo-direito {
-    flex: 1 1 200px;
-    display: flex;
-    flex-flow: column wrap;
-}
 
-nav {
-    flex: 1 1 200px;
-    align-items: center;
-    justify-content: center;
-}
-
-.carrosel{
-    box-shadow: 2px 2px 4px black;
-    overflow: hidden;
-    height: 300px;
-    width: 300px;
-    position: absolute;
-    left: 20px;
-    top: 10px;
-    border-radius: 15px;
-  }
-    
-  
 .iframe {
-    margin-top: 0px;
-    width: -300px;
-    height: 250px;
-  }
-  
-  .hora {
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-    height: 240px;
-    width: 280px;
-    margin-top: 470px;
-    margin-left: -292px;
-  }
-  
-
-main {
-    flex: 20 1 500px;
-    height: calc(100vh - 224px);
-    align-items: center;
-    justify-content: center;
-    /* conta: 100% tamanho vertical - (Header (100px) + Footer(100px) + Margin (((3px+3px)/4)=24)) = (100 + 100 + 24 =224) */
+    margin-top: -123px;
+    width: -310px;
+    height: 400px;
+    margin-left: 50px;
 }
 
+#iframe-des {
+    width: 360px;
+    height: 270px;
+    border: none;
+    overflow: hidden;
+    margin-left: 10px;
+    
+}
+
+
+#menu-esq {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin: -180px 100px;
+    gap: 15px;
+}
+
+#menu-dir {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin: -180px -400px;
+    gap: 15px;
+}
+
+#input-menu {
+    font-size: 15pt;
+    width: 300px;
+    height: 60px;
+    cursor: pointer;
+    background-color: hsl(133, 41%, 31%);
+    color: hsl(0, 0%, 80%);
+    border: 0;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+#input-menu:hover {
+    font-size: 20pt;
+    background-color: hsl(0, 0%, 80%);
+    color: hsl(133, 41%, 31%);
+    border: 1px solid hsl(0, 0%, 80%);
+    transform: scale(1.1);
+}
+
+#input-menu-ajuda {
+    font-size: 25pt;
+    width: 300px;
+    height: 60px;
+    cursor: pointer;
+    background-color: hsl(0, 100%, 50%);
+    color: hsl(0, 0%, 80%);
+    border: 0;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+#input-menu-ajuda:hover {
+    font-size: 20pt;
+    background-color: hsl(0, 100%, 61%);
+    color: hsl(0, 0%, 80%);
+    border: 1px solid hsl(0, 0%, 80%);
+    transform: scale(1.1);
+}
 
 #emergencia {
     position: absolute;
@@ -116,13 +145,22 @@ main {
     transform: scale(1.1);
 }
 
+nav {
+    flex: 1 1 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    flex: 20 1 500px;
+    height: calc(100vh - 224px);
+    align-items: center;
+    justify-content: center;
+    /* conta: 100% tamanho vertical - (Header (100px) + Footer(100px) + Margin (((3px+3px)/4)=24)) = (100 + 100 + 24 =224) */
+}
+
 @media only screen and (max-width: 923px) {
     main {
         height: calc(100vh - 224px);
-    }
-
-    aside {
-        height: calc(100vh - 224px);
-
     }
 }

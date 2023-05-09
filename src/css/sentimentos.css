@@ -58,25 +58,27 @@ main {
 
 #conteudo-esquerdo {
   display: flex;
-  width: 280px;
-  height: 300px;
+  width: 350px;
   flex-flow: column wrap;
+  margin-top: 10px;
 }
+
 
 .iframe {
-  margin-top: 0px;
-  width: -300px;
-  height: 250px;
+  margin-top: -160px;
+  width: 300px;
+  height: 380px;
+  margin-left: 20px;
 }
 
-.hora {
-  position: absolute;
-  align-items: center;
-  justify-content: center;
-  height: 240px;
-  width: 280px;
-  margin-top: 470px;
-  margin-left: -292px;
+
+#hora {
+  width: 360px;
+  height: 270px;
+  border: none;
+  overflow: hidden;
+  margin-left: 20px;
+  
 }
 
 #sentimentos {
