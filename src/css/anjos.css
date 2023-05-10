@@ -8,7 +8,8 @@
 }
 
 body {
-    background: hsl(46.3, 100%, 91%);
+    /*background: hsl(46.3, 100%, 91%);*/
+    background: hsl(47, 81%, 46%);
     display: flex;
     flex-wrap: wrap;
     margin: 3px;

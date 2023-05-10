@@ -8,7 +8,7 @@
 }
 
 body {
-  background: hsl(46.3, 100%, 91%);
+  background: hsl(46, 100%, 91%);
   display: flex;
   flex-wrap: wrap;
   margin: 3px;
@@ -17,7 +17,7 @@ body {
 
 nav,
 main {
-  background: hsl(46.3, 100%, 91%);
+  background: hsl(46, 100%, 91%);
   display: flex;
   margin: 3px;
 }
@@ -51,6 +51,8 @@ main {
   margin: 6px 40px;
 }
 
+/* IMAGEM DEVE FICAR AO LADO DO TITULO DA PAGINA
+   MEUS SENTIMENTOS*/
 .bi-menu-button-wide-fill {
   position: absolute;
   margin: 30px;
@@ -63,7 +65,6 @@ main {
   margin-top: 10px;
 }
 
-
 .iframe {
   margin-top: -160px;
   width: 300px;
@@ -71,14 +72,12 @@ main {
   margin-left: 20px;
 }
 
-
 #hora {
   width: 360px;
   height: 270px;
   border: none;
   overflow: hidden;
   margin-left: 20px;
-  
 }
 
 #sentimentos {
@@ -95,18 +94,18 @@ main {
   flex-direction: row;
   width: 130px;
   height: 130px;
-  margin: 50px -400px 0px;
+  margin: 30px -400px 0px;
   gap: 200px;
 }
 
 .botao-salvar {
   position: absolute;
-  margin: 20px -250px 0px;
+  margin: 40px -310px 0px;
 }
 
 #register_button {
   font-size: 15pt;
-  width: 500px;
+  width: 700px;
   height: 50px;
   cursor: pointer;
   background-color: hsl(133, 41%, 31%);
@@ -128,7 +127,83 @@ main {
   height: 150px;
   background-color: hsl(46, 100%, 85%);
   color: hsl(133, 41%, 31%);
-  ;
+}
+
+#conteudo-direito {
+  display: flex;
+  flex-flow: column wrap;
+  flex: 1 1 200px;
+}
+
+#conta {
+  position: absolute;
+  margin: -10px 15px;
+  font-size: 20pt;
+  color: hsl(137, 93%, 24%);
+  padding: 15px;
+}
+
+#titulo-mensagem {
+  align-items: center;
+  font-size: 15pt;
+  font-weight: bold;
+  color: hsl(137, 93%, 24%);
+  margin: 50px 30px 0;
+}
+
+textarea {
+  resize: none;
+}
+
+#text {
+  font-size: 12pt;
+  display: block;
+  width: 15em;
+  height: 220px;
+  padding: 0, 2em;
+  border: 2px solid hsl(137, 93%, 24%);
+  box-shadow: 4px 4px 2px rgba(154, 122, 122, 0.2);
+  margin: 3px auto 0;
+}
+
+#countdown {
+  margin-top: 10px;
+  font-size: 12px;
+  color: gray;
+}
+
+#register-form {
+  background: hsl(46, 70%, 91%);
+  display: flex;
+  flex-direction: column;
+  height: 410px;
+  padding: 10px 40px;
+  border-radius: 8px;
+  gap: 10px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
+  margin: -5px 20px 0;
+}
+
+#limpar {
+  font-size: 12pt;
+  width: 70px;
+  height: 20px;
+  cursor: pointer;
+  background-color: hsl(133, 41%, 31%);
+  color: hsl(0, 0%, 80%);
+  border: 0;
+  border-radius: 8px;
+  transition: 0.3s;
+  margin-left: 170px;
+  margin-top: -25px;
+}
+
+#limpar:hover {
+  font-size: 13pt;
+  background-color: hsl(0, 0%, 80%);
+  color: hsl(133, 41%, 31%);
+  border: 1px solid hsl(0, 0%, 80%);
+  transform: scale(1.1);
 }
 
 #emergencia {

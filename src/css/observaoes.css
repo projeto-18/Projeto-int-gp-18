@@ -72,8 +72,6 @@ aside {
     overflow: auto; /* adicionado para habilitar barra de rolagem */
     word-wrap: break-word;
     word-break: break-all;
-
-
 }
 
 .input {

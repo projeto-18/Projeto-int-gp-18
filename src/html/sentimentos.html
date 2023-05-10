@@ -42,16 +42,14 @@
                 </div>
             </div>
         </nav>
-       
             <div class="iframe">
                 <iframe id="hora"  src="hora.html" frameborder="0"width="280" height="300">
-
-                </iframe></div>
-        
+                </iframe>
+            </div>
     </section>
     <main>
         <section>
-            <div id="sentimentos">
+            <div class="sentimentos" id="sentimentos">
                 <img src="../assets/image/Smile_Great.png" alt="Estou feliz" class="imagem-clicavel" id="image" data-id="smile-great">
 
                 <img src="../assets/image/Smile_Good.png" alt="Estou feliz" class="imagem-clicavel" id="image" data-id="smile-great">
@@ -70,6 +68,19 @@
             </div>
         </section>
     </main>
+    <section id="container-mesg">
+        <section id="register-form">
+            <h2 id="conta">Conta pra gente...</h2>
+            <div class="fez-bem?">
+                <p id="titulo-mensagem">O que te fez bem?<br>ou o que te fez mau?<br>e o que você aprendeu?
+                </p>
+                <textarea id="text"  placeholder="Compartilhe aqui"></textarea>
+                <p><span class="countdown1" id="countdown">250</span> caracteres restantes</p>
+            </div>
+            <button id="limpar" onclick="limpar()">Limpar</button>
+            </div>
+        </section>
+    </section>
     <div>
         <a href="../html/emergencia.html"><input type="submit" id="emergencia" name="acao" value="Emergência" /></a>
     </div>
@@ -96,7 +107,7 @@
             </ul>
         </nav>
     </footer>
-
+    <script src="../js/sentimentos.js"></script>
 </body>
 
 </html>
