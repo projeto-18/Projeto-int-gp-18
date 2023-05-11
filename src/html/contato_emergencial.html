@@ -44,95 +44,50 @@
         
     </section>
     
-        <div class="formulario-container">
-            <form
-                action="#"
-                method="post"
-                autocomplete="off"
-                id="form"
-            >
-                <div>
-                    <label class="label" for="n1">Nome Completo:</label>
-                    <input
-                        type="text"
-                        name="nome1"
-                        id="n1"
-                        pattern="[a-zA-Z]+"
-                    >
-                    <label class="label" for="parente">Parentesco:</label>
-                    <select name="parente" id="parente">
-                        <option value="mae">Mãe</option>
-                        <option value="pai">Pai</option>
-                        <option value="irmao">irmão</option>
-                        <option value="irmã">Irmã</option>
-                        <option value="conjuge">Conjuge</option>
-                    </select>
-                </div>
-                <div id="tel1">
-                    <label class="label" for="tel">Telefone:</label>
-                    <input
-                        type="tel"
-                        name="tel"
-                        id="tel"
-                        pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}"
-                        placeholder="(xx)xxxxx-xxxx"
-                    >
-                </div>
-            </form>
-        </div>
-        <div class="formulario-container">
-            <form
-                action="#"
-                method="post"
-                autocomplete="off"
-                id="form2"
-            >
-                <div>
-                    <label class="label" for="n2">Nome Completo:</label>
-                    <input
-                        type="text"
-                        name="nome1"
-                        id="n2"
-                        pattern="[a-zA-Z]+"
-                    >
-                    <label class="label" for="parente2">Parentesco:</label>
-                    <select name="parente" id="parente2">
-                        <option value="mae">Mãe</option>
-                        <option value="pai">Pai</option>
-                        <option value="irmao">irmão</option>
-                        <option value="irmã">Irmã</option>
-                        <option value="conjuge">Conjuge</option>
-                    </select>
-                </div>
-                <div id="tel2">
-                    <label class="label" for="tel">Telefone:</label>
-                    <input
-                        type="tel"
-                        name="tel"
-                        id="tel"
-                        pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}"
-                        placeholder="(xx)xxxxx-xxxx"
-                    >
-                </div>
-            </form>
-        </div>
+    <div id="fcon">
+        <form  action="#" method="post" autocomplete="off" id="form">
+            <div class="formulario-container">
+                    <div>
+                        <label class="label" for="n1">Nome Completo:</label>
+                        <input
+                            type="text"
+                            name="nome1"
+                            id="n1"
+                            pattern="[a-zA-Z]+"
+                        >
+                        <label class="label" for="parente">Parentesco:</label>
+                        <select name="parente" id="parente">
+                            <option value="mae">Mãe</option>
+                            <option value="pai">Pai</option>
+                            <option value="irmao">irmão</option>
+                            <option value="irmã">Irmã</option>
+                            <option value="conjuge">Conjuge</option>
+                        </select>
+                    </div>
+                    <div id="tel1">
+                        <label class="label" for="tel">Telefone:</label>
+                        <input
+                            type="tel"
+                            name="tel"
+                            id="tel"
+                            pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}"
+                            placeholder="(xx)xxxxx-xxxx"
+                        >
+                    </div>
+        
+            </div>
+            <div id="button">
+                <input
+                    type="button"
+                    value="Salvar/Alterar"
+                    id="botao"
+                    onclick="salvar()"
+                >
+            </div>
+        </form>
+    </div>
 
-    
-
-    <section id="btt">
-        <div id="button">
-            <input
-                type="button"
-                value="Salvar/Alterar"
-                id="botao"
-                onclick="salvar()"
-            >
-        </div>
-    </section>
-
-
-    
-
+        
 
     <div>
         <a href="../html/emergencia.html"><input type="submit" id="emergencia" name="acao" value="Emergência" /></a>

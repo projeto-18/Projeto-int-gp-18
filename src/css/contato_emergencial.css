@@ -66,17 +66,26 @@ aside {
     gap: 15px;
 }
 
-.formulario-container{
-  font-size: 0.6em;
-  margin-bottom: 0px;
+#fcon {
   display: flex;
-  margin-top: 10px;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  width: 900px;
+  height: 300px;
+  margin-top: 0px;
+}
+
+.formulario-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 100px;
+  font-size: 0.6em;
   max-width: 400px;
   height: 230px;
   background: white;
-  margin: 50px;
   border-radius: 15px;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.541);
 }
@@ -155,23 +164,28 @@ aside {
 }
 
 #button {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
+  position: absolute;
+  margin: -20px 130px 0px;
 }
 
 #botao{
-  width: 280px;
+  font-size: 15pt;
+  width: 700px;
   height: 50px;
-  border-radius: 35px;
-  font-size: 2em;
-  background-color: aquamarine;
+  cursor: pointer;
+  background-color: hsl(133, 41%, 31%);
+  color: hsl(0, 0%, 80%);
+  border: 0;
+  border-radius: 20px;
+  transition: 0.3s;
 }
 
 #botao:hover{
-  background-color: blue;
-  color: white;
-  cursor: pointer;
+  font-size: 20pt;
+  background-color: hsl(0, 0%, 80%);
+  color: hsl(133, 41%, 31%);
+  border: 1px solid hsl(0, 0%, 80%);
+  transform: scale(1.1);
 }
 
 #btt {
@@ -215,7 +229,7 @@ main {
 #emergencia {
     position: absolute;
     font-size: 35pt;
-    margin: 420px -939px;
+    margin: 420px -789px;
     width: 1000px;
     height: 70px;
     cursor: pointer;
