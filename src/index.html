@@ -24,15 +24,15 @@
         </nav>
     </header>
     <main id="container">
-        <form id="login-form">
+        <form id="login-form" action="login.php" method="POST" onsubmit="return validateForm()">
             <div id="form-header">
                 <h1>Login</h1>
             </div>
             <div id="inputs">
                 <div class="inputbox">
                     <div class="input-field">
-                        <i class="bi bi-envelope-fill"></i>
-                        <input id="email" type="text" name="email" placeholder="E-mail" required />
+                        <i class="bi bi-person"></i>
+                        <input id="username" type="text" name="username" placeholder="Nome de Usuário" required />
                     </div>
                 </div>
                 <div class="inputbox">

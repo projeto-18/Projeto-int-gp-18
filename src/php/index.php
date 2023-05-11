@@ -1,58 +1,34 @@
 <?php
-include_once('database.php');
+// Conexão com o banco de dados
+$servername = "mysql.clvtpz0ffks2.us-east-1.rds.amazonaws.com";
+$username = "minhasaude";
+$password = "Pjminhasaude2023";
+$dbname = "minhasaude";
 
-$query = "SELECT * FROM tbl_usuario";
-$result = mysqli_query($connection, $query);
+$conn = new mysqli($servername, $username, $password, $dbname);
 
-if (!$result) {
-    die("Query failed: " . mysqli_error($connection));
+// Verifica a conexão
+if ($conn->connect_error) {
+    die("Erro na conexão com o banco de dados: " . $conn->connect_error);
 }
 
-while ($row = mysqli_fetch_assoc($result)) {
-    echo $row['name'] . "<br>";
-}
-?>
+// Obtém os valores do formulário
+$username = $_POST['username'];
+$password = $_POST['password'];
 
+// Consulta SQL para verificar se o usuário existe
 
+$sql = "SELECT * FROM `minhasaude`.`tbl_usuario` WHERE username = '$username' AND password = '$password'";
+$result = $conn->query($sql);
 
-<?php 
-include('conexao.php');
+//$sql = "SELECT * FROM minhasaude.tbl_usuario WHERE username = //'$username' AND password = '$password'";
+//$result = $conn->query($sql);
 
-if(isset($_POST['email']) || isset($_POST['senha'])) {
-
-    if(strlen($_POST['email']) == 0) {
-        echo "Preencha seu e-mail";
-    } else if(strlen($_POST['senha']) == 0) {
-        echo "Preencha sua senha";
-    } else {
-
-        $email = $mysqli->real_escape_string($_POST['email']);
-        $senha = $mysqli->real_escape_string($_POST['senha']);
-
-        $sql_code = "SELECT * FROM usuarios WHERE email = '$email' AND senha = '$senha'";
-        $sql_query = $mysqli->query($sql_code) or die("Falha na execução do código SQL: " . $mysqli->error);
-
-        $quantidade = $sql_query->num_rows;
-
-        if($quantidade == 1) {
-            
-            $usuario = $sql_query->fetch_assoc();
-
-            if(!isset($_SESSION)) {
-                session_start();
-            }
-
-            $_SESSION['id'] = $usuario['id'];
-            $_SESSION['nome'] = $usuario['nome'];
-
-            header("Location: painel.php");
-
-        } else {
-            echo "Falha ao logar! E-mail ou senha incorretos";
-        }
-
-    }
-
-}
-?>
+// Verifica se o resultado da consulta possui algum registro
+if ($result->num_rows > 0) {
+    // Usuário autenticado com sucesso
+    echo "Login realizado com sucesso!";
+} else {
+    // Usuário não encontrado ou senha incorreta
+}   
 

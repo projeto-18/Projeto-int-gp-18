@@ -73,9 +73,9 @@ main {
     color: hsl(0, 0%, 63%);
 }
 
-.bi-eye-fill {
+.bi-person {
     position: absolute;
-    margin: 300px;
+    margin: -35px;
     cursor: pointer;
 }
 
