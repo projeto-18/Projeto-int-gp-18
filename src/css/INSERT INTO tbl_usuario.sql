@@ -1,0 +1,1 @@
+INSERT INTO tbl_usuario (nome, usuario, cpf, email, senha, data_cadastro, data_alteracao) VALUES ('Minha Saude', 'minhasaude', '11122233344', 'pjminhasaude@gmail.com', '123456', '2023-05-11', '');
