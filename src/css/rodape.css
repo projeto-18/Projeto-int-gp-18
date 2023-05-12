@@ -29,6 +29,7 @@ li {
 }
 
 .btn-sair{
+    background: hsl(46.3, 100%, 91%);
     border: none;
     cursor: pointer;
 }
