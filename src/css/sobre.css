@@ -29,10 +29,10 @@ main {
 }
 
 .container {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
 }
 
 #img_logo {
@@ -41,34 +41,54 @@ main {
     margin: 100px 70px 0px;
 }
 
-h1{
+h1 {
     font-size: 40pt;
     color: hsl(133, 41%, 31%);
     height: 50px;
     margin: 150px 100px 50px;
 }
 
-h2{
+h2 {
     font-size: 30pt;
     color: hsl(133, 41%, 31%);
     margin: 0px 100px 50px;
 }
 
-h3{
+h3 {
     font-size: 20pt;
     color: hsl(133, 41%, 31%);
     margin: -30px 250px 50px;
 }
 
-h4{
+h4 {
     font-size: 18pt;
     color: hsl(133, 41%, 31%);
     margin: -30px 100px 50px;
 }
 
-p{
-        font-size: 15pt;
-        color: hsl(133, 41%, 31%);
-        margin: -40px 100px 50px;
+p {
+    font-size: 15pt;
+    color: hsl(133, 41%, 31%);
+    margin: -40px 100px 50px;
 }
-  font-weight: bold;
+
+.voltar-menu {
+    font-size: 12pt;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    background-color: hsl(133, 41%, 31%);
+    color: hsl(0, 0%, 80%);
+    border: 0;
+    border-radius: 8px;
+    transition: 0.3s;
+    margin: 630px -250px 0px;
+}
+
+.voltar-menu:hover{
+    font-size: 13pt;
+    background-color: hsl(0, 0%, 80%);
+    color: hsl(133, 41%, 31%);
+    border: 1px solid hsl(0, 0%, 80%);
+    transform: scale(1.1);
+}
