@@ -28,6 +28,11 @@ li {
     list-style: none;
 }
 
+.btn-sair{
+    border: none;
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 923px) {
     #navegacao {
         padding: 0px 60px 0px 60px;

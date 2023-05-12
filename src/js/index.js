@@ -1,5 +1,5 @@
 if (localStorage.getItem("token") == null) {
-    /*alert("Você precisa estar logado para acessar essa página"); */
+    alert("Você precisa estar logado para acessar essa página, caso ainda não seja cadastrado clique em CADASTRE-SE!");
     window.location.href = "./html/signin.html";
   }
  
