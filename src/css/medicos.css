@@ -48,6 +48,26 @@ main {
     margin-top: 10px;
 }
 
+#nome-tela{
+    display: contents;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 200px;
+    height: 100px;
+    background-color: aliceblue;
+}
+
+#med{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    margin-left: -10%;
+    
+}
+
 
 .superior {
     height: 240px;
