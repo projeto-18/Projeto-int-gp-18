@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Fraunces:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Boogaloo', cursive;
+}
+
+body {
+    background: hsl(46.3, 100%, 91%);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3px;
+    flex: 1 1 100vw;
+}
+
+nav {
+    display: flex;
+    margin: 3px;
+    flex: 1 1 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    flex: 20 1 500px;
+    height: calc(100vh - 224px);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 100px;
+}
+
+#img_logo {
+    flex: 0 1 100px;
+    height: 400px;
+    margin: 100px 70px 0px;
+}
+
+h1{
+    font-size: 40pt;
+    color: hsl(133, 41%, 31%);
+    height: 50px;
+    margin: 150px 100px 50px;
+}
+
+h2{
+    font-size: 30pt;
+    color: hsl(133, 41%, 31%);
+    margin: 0px 100px 50px;
+}
+
+h3{
+    font-size: 20pt;
+    color: hsl(133, 41%, 31%);
+    margin: -30px 250px 50px;
+}
+
+h4{
+    font-size: 18pt;
+    color: hsl(133, 41%, 31%);
+    margin: -30px 100px 50px;
+}
+
+p{
+        font-size: 15pt;
+        color: hsl(133, 41%, 31%);
+        margin: -40px 100px 50px;
+}
+  font-weight: bold;
