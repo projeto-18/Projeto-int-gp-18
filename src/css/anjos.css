@@ -9,7 +9,7 @@
 
 body {
     /*background: hsl(46.3, 100%, 91%);*/
-    background: hsl(47, 81%, 46%);
+    background: hsl(47, 78%, 46%);
     display: flex;
     flex-wrap: wrap;
     margin: 3px;
@@ -17,61 +17,11 @@ body {
 }
 
 nav,
-main,
-aside {
+main {
     background: hsl(46.3, 100%, 91%);
+
     display: flex;
     margin: 3px;
-}
-
-#titulo {
-    display: flex;
-    margin: 3px;
-    flex: 1 1 100vw;
-    height: 50px;
-}
- .superior {
-    height: 240px;
-    width: 280px;
- }
-
-.iframe {
-    margin-top: 100px;
-    width: 250px;
-    height: 340px;
-    margin-left: -30px;
-   
-}
-
-#iframe-des {
-    width: 280px;
-    height: 240px;
-    border: none;
-    overflow: hidden;
-    margin-left: 33px;
-    margin-top: -55px;
-    
-}
-
-
-#menu-esq {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    margin: -180px 100px;
-    gap: 15px;
-}
-
-#nometela {
-    margin-top: -50px;
-    font-size: 40px;
-    color: hsl(133, 41%, 31%);
-    text-align: center;
-}
-#conteudo-direito {
-    flex: 1 1 200px;
-    display: flex;
-    flex-flow: column wrap;
 }
 
 nav {
@@ -88,20 +38,70 @@ main {
     /* conta: 100% tamanho vertical - (Header (100px) + Footer(100px) + Margin (((3px+3px)/4)=24)) = (100 + 100 + 24 =224) */
 }
 
+#titulo {
+    font-size: 25pt;
+    color: hsl(133, 41%, 31%);
+    display: flex;
+    margin: 3px;
+    flex: 1 1 100vw;
+    height: 50px;
+}
+
+.titulo i {
+    font-size: 30px;
+    margin: 5px -50px;
+}
+
+.bi-person-hearts {
+    position: absolute;
+    margin: 300px;
+}
+
+
+.iframe {
+    width: 280px;
+    height: 240px;
+    margin: 0px auto 0px;
+}
+
+#iframe-des {
+    width: 280px;
+    height: 255px;
+    margin: 0px auto 0px;
+}
+
+#menu-esq {
+    /*position: absolute;*/
+    display: flex;
+    flex-direction: column;
+    margin: -180px 100px;
+    gap: 15px;
+}
+
+#nome-tela {
+    color: hsl(133, 41%, 31%);
+    font-size: 15pt;
+    text-align: center;
+    margin: -100px 50px 0px;
+}
+
+#conteudo-direito {
+    flex: 1 1 200px;
+    display: flex;
+    flex-flow: column wrap;
+}
 
 #emergencia {
-    position: absolute;
     font-size: 35pt;
-    margin: 420px -1100px;
     width: 1000px;
     height: 70px;
-    cursor: pointer;
+    border: 0;
     background-color: hsl(0, 100%, 50%);
     color: hsl(0, 0%, 80%);
-    border: 0;
     border-radius: 20px;
     transition: 0.3s;
-    justify-content: center;
+    cursor: pointer;
+    margin: 400px -600px 0px;
 }
 
 #emergencia:hover {
