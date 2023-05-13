@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,17 +10,14 @@
     <link href="../css/sentimentos.css" rel="stylesheet" type="text/css" />
     <link href="../css/rodape.css" rel="stylesheet" type="text/css" />
 </head>
-
 <body>
     <header>
         <li><img id="logo" src="../assets/image/Logo.png" alt="MinhaSaúde"></li>
-
         <nav id="cabecalho">
             <h1>MinhaSaúde</h1>
         </nav>
     </header>
     <section id="titulo">
-        
         <nav>
             <div class="titulo">
                 <i class="bi bi-chat-heart"></i>
@@ -38,26 +34,34 @@
                 </div>
             </div>
         </nav>
-        
             <div class="iframe">
                 <iframe id="iframe-des" src="hora.html" frameborder="0"></iframe>
             </div>
-        
     </section>
     <main>
-
+            <div id="sen">
+                <div class="sentimentos" id="sentimentos">
+                    <img src="../assets/image/Smile_Great.png" alt="Estou feliz" class="imagem-clicavel" id="image" data-id="smile-great">
+                    <img src="../assets/image/Smile_Good.png" alt="Estou feliz" class="imagem-clicavel" id="image" data-id="smile-great">
+                    <img src="../assets/image/Smile_Okay.png" alt="Estou feliz" class="imagem-clicavel" id="image" data-id="smile-great">
+                </div>
+                <div id="sentimentos2">
+                    <img src="../assets/image/Smile_NotGreat.png" alt="Estou feliz" class="imagem-clicavel" id="image" data-id="smile-great">
+                    <img src="../assets/image/Smile_Bad.png" alt="Estou feliz" class="imagem-clicavel" id="image" data-id="smile-great">
+                    <img src="../assets/image/Smile_VeryBad.png" alt="Estou feliz" class="imagem-clicavel" id="image" data-id="smile-great">
+                </div>
+            </div>
     </main>
     <section id="conteudo-direito">
         <h2 id="conta">Conta pra gente...</h2>
         <div class="fez-bem?">
             <p id="titulo-mensagem">O que te fez bem?<br>ou o que te fez mau?<br>e o que você aprendeu?
             </p>
-            <textarea id="text"  placeholder="Compartilhe aqui"></textarea>
+            <textarea id="text" placeholder="Compartilhe aqui"></textarea>
             <p><span class="countdown1" id="countdown">250</span> caracteres restantes</p>
-            <div class="botao-salvar">
-                <input type="submit" id="register_button" name="acao" value="Salvar " />
-            </div>
         </div>
+        <div>
+        <button id="register_button" onclick="salvar()">Salvar</button>
         <button id="limpar" onclick="limpar()">Limpar</button>
         </div>
     </section>
@@ -65,15 +69,6 @@
         <nav>
             <ul id="container">
                 <li class="home"><a href="../html/menu.html"><img  id="navegacao" src="../assets/image/home.png" alt="HomePage"></a>
-                </li>
-                <!--li>
-                    <a href="#"><img id="navegacao" src="../assets/image/document.png" alt="HomePage"></a>
-                </li>
-                <li>
-                    <a href="#"><img id="navegacao" src="../assets/image/medical.png" alt="HomePage"></a>
-                </li>
-                <li>
-                    <a href="#"><img id="navegacao" src="../assets/image/heart.png" alt="HomePage"></a-->
                 </li>
                 <li>
                     <a href="../html/sobre.html"><img id="navegacao" src="../assets/image/help.png" alt="HomePage"></a>
@@ -85,5 +80,6 @@
             </ul>
         </nav>
     </footer>
+    <script src="../js/sentimentos.js"></script>
 </body>
 </html>
