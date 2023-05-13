@@ -6,12 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="MinhaSaude">
     <title>MinhaSaúde</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="../css/cabecalho.css" rel="stylesheet" type="text/css" />
     <link href="../css/sentimentos.css" rel="stylesheet" type="text/css" />
     <link href="../css/rodape.css" rel="stylesheet" type="text/css" />
 </head>
-
+ 
 <body>
     <header>
         <li><img id="logo" src="../assets/image/Logo.png" alt="MinhaSaúde"></li>
@@ -21,12 +26,11 @@
         </nav>
     </header>
     <section id="titulo">
-        
         <nav>
             <div class="titulo">
-                <i class="bi bi-chat-heart"></i>
-                Emocional
-            </div > 
+                <i class="bi bi-menu-button-wide-fill"></i>
+                Meus Sentimentos
+            </div> 
         </nav>
     </section>
     <section id="conteudo-esquerdo">
@@ -38,42 +42,58 @@
                 </div>
             </div>
         </nav>
-        
             <div class="iframe">
-                <iframe id="iframe-des" src="hora.html" frameborder="0"></iframe>
+                <iframe id="hora"  src="hora.html" frameborder="0"width="280" height="300">
+                </iframe>
             </div>
-        
     </section>
     <main>
+            <!--div class="sentimentos" id="sentimentos">
+                <img src="../assets/image/Smile_Great.png" alt="Estou feliz" class="imagem-clicavel" id="image" data-id="smile-great">
 
+                <img src="../assets/image/Smile_Good.png" alt="Estou feliz" class="imagem-clicavel" id="image" data-id="smile-great">
+
+                <img src="../assets/image/Smile_Okay.png" alt="Estou feliz" class="imagem-clicavel" id="image" data-id="smile-great">
+            </div>
+            <div id="sentimentos2">
+                <img src="../assets/image/Smile_NotGreat.png" alt="Estou feliz" class="imagem-clicavel" id="image" data-id="smile-great">
+
+                <img src="../assets/image/Smile_Bad.png" alt="Estou feliz" class="imagem-clicavel" id="image" data-id="smile-great">
+
+                <img src="../assets/image/Smile_VeryBad.png" alt="Estou feliz" class="imagem-clicavel" id="image" data-id="smile-great">
+            </div>
+            <div class="botao-salvar">
+                <input type="submit" id="register_button" name="acao" value="Salvar " />
+            </div>
+        <div>
+            <a href="../html/emergencia.html"><input type="submit" id="emergencia" name="acao" value="Emergência" /></a>
+        </div-->
     </main>
-    <section id="conteudo-direito">
+    <section id="register-form">
         <h2 id="conta">Conta pra gente...</h2>
-        <div class="fez-bem?">
+        <!--div class="fez-bem?">
             <p id="titulo-mensagem">O que te fez bem?<br>ou o que te fez mau?<br>e o que você aprendeu?
             </p>
             <textarea id="text"  placeholder="Compartilhe aqui"></textarea>
             <p><span class="countdown1" id="countdown">250</span> caracteres restantes</p>
-            <div class="botao-salvar">
-                <input type="submit" id="register_button" name="acao" value="Salvar " />
-            </div>
         </div>
         <button id="limpar" onclick="limpar()">Limpar</button>
-        </div>
+        </div-->
     </section>
+
     <footer>
         <nav>
             <ul id="container">
-                <li class="home"><a href="../html/menu.html"><img  id="navegacao" src="../assets/image/home.png" alt="HomePage"></a>
+                <li><a href="../html/menu.html"><img id="navegacao" src="../assets/image/home.png" alt="HomePage"></a>
                 </li>
-                <!--li>
+                <li>
                     <a href="#"><img id="navegacao" src="../assets/image/document.png" alt="HomePage"></a>
                 </li>
                 <li>
                     <a href="#"><img id="navegacao" src="../assets/image/medical.png" alt="HomePage"></a>
                 </li>
                 <li>
-                    <a href="#"><img id="navegacao" src="../assets/image/heart.png" alt="HomePage"></a-->
+                    <a href="#"><img id="navegacao" src="../assets/image/heart.png" alt="HomePage"></a>
                 </li>
                 <li>
                     <a href="../html/sobre.html"><img id="navegacao" src="../assets/image/help.png" alt="HomePage"></a>
@@ -85,5 +105,7 @@
             </ul>
         </nav>
     </footer>
+    <script src="../js/sentimentos.js"></script>
 </body>
+
 </html>
