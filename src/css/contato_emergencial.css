@@ -8,7 +8,6 @@
 }
 
 body {
-    /*background: hsl(46.3, 100%, 91%);*/
     background: hsl(46.3, 100%, 91%);
     display: flex;
     flex-wrap: wrap;
@@ -19,7 +18,8 @@ body {
 nav,
 main,
 aside {
-    background: hsl(46.3, 100%, 91%);
+    background: hsl(47, 72%, 51%);    
+    /*background: hsl(46.3, 100%, 91%);*/
     display: flex;
     margin: 3px;
 }
@@ -34,10 +34,33 @@ aside {
     justify-content: center;
     color: hsl(133, 41%, 31%);
 }
+
  .superior {
     height: 240px;
     width: 280px;
  }
+ 
+.iframe {
+  width: 280px;
+  height: 240px;
+  margin: 0px auto 0px;
+}
+
+#iframe-des {
+  width: 280px;
+  height: 255px;
+  margin: 0px auto 0px;
+}
+
+#menu-esq {
+  /*position: absolute;*/
+  display: flex;
+  flex-direction: column;
+  margin: -180px 100px;
+  gap: 15px;
+}
+/*
+
 
 .iframe {
     margin-top: 100px;
@@ -65,7 +88,7 @@ aside {
     margin: -180px 100px;
     gap: 15px;
 }
-
+*/
 #fcon {
   display: flex;
   justify-content: center;

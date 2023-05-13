@@ -15,7 +15,7 @@ body {
     margin: 3px;
     flex: 1 1 100vw;
 }
-
+ 
 nav,
 main {
     background: hsl(46.3, 100%, 91%);
