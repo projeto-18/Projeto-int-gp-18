@@ -13,10 +13,12 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="../css/cabecalho.css" rel="stylesheet" type="text/css" />
-    <link href="../css/sentimentos.css" rel="stylesheet" type="text/css" />
+    <link href="../css/relatorios.css" rel="stylesheet" type="text/css" />
     <link href="../css/rodape.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
 </head>
- 
+
 <body>
     <header>
         <li><img id="logo" src="../assets/image/Logo.png" alt="MinhaSaúde"></li>
@@ -28,8 +30,8 @@
     <section id="titulo">
         <nav>
             <div class="titulo">
-                <i class="bi bi-menu-button-wide-fill"></i>
-                Meus Sentimentos
+                <i class="bi bi-bar-chart-line"></i>
+                Relatório com Gráfico
             </div> 
         </nav>
     </section>
@@ -42,45 +44,64 @@
                 </div>
             </div>
         </nav>
+        
             <div class="iframe">
-                <iframe id="hora"  src="hora.html" frameborder="0"width="280" height="300">
-                </iframe>
+                <iframe id="iframe-des" src="hora.html" frameborder="0"></iframe>
             </div>
+        
     </section>
     <main>
-            <!--div class="sentimentos" id="sentimentos">
-                <img src="../assets/image/Smile_Great.png" alt="Estou feliz" class="imagem-clicavel" id="image" data-id="smile-great">
-
-                <img src="../assets/image/Smile_Good.png" alt="Estou feliz" class="imagem-clicavel" id="image" data-id="smile-great">
-
-                <img src="../assets/image/Smile_Okay.png" alt="Estou feliz" class="imagem-clicavel" id="image" data-id="smile-great">
-            </div>
-            <div id="sentimentos2">
-                <img src="../assets/image/Smile_NotGreat.png" alt="Estou feliz" class="imagem-clicavel" id="image" data-id="smile-great">
-
-                <img src="../assets/image/Smile_Bad.png" alt="Estou feliz" class="imagem-clicavel" id="image" data-id="smile-great">
-
-                <img src="../assets/image/Smile_VeryBad.png" alt="Estou feliz" class="imagem-clicavel" id="image" data-id="smile-great">
-            </div>
-            <div class="botao-salvar">
-                <input type="submit" id="register_button" name="acao" value="Salvar " />
-            </div>
-        <div>
-            <a href="../html/emergencia.html"><input type="submit" id="emergencia" name="acao" value="Emergência" /></a>
-        </div-->
-    </main>
-    <section id="register-form">
-        <h2 id="conta">Conta pra gente...</h2>
-        <!--div class="fez-bem?">
-            <p id="titulo-mensagem">O que te fez bem?<br>ou o que te fez mau?<br>e o que você aprendeu?
-            </p>
-            <textarea id="text"  placeholder="Compartilhe aqui"></textarea>
-            <p><span class="countdown1" id="countdown">250</span> caracteres restantes</p>
+        <div style="width: 30%;">
+            <canvas id="myChart"></canvas>
         </div>
-        <button id="limpar" onclick="limpar()">Limpar</button>
-        </div-->
-    </section>
-
+        <script>
+            // Dados do gráfico
+            var data = {
+                labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio'],
+                datasets: [{
+                    label: 'Relatórios',
+                    data: [1200, 1500, 900, 1800, 2000],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255,99,132,1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            };
+    
+            // Opções do gráfico
+            var options = {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            };
+    
+            // Criação do gráfico
+            var ctx = document.getElementById('myChart').getContext('2d');
+            var myChart = new Chart(ctx, {
+                type: 'bar',
+                data: data,
+                options: options
+            });
+        </script>
+    </main>
+    <div>
+        <a href="../html/emergencia.html"><input type="submit" id="emergencia" name="acao" value="Emergência" /></a>
+    </div>
     <footer>
         <nav>
             <ul id="container">
@@ -105,7 +126,6 @@
             </ul>
         </nav>
     </footer>
-    <script src="../js/sentimentos.js"></script>
 </body>
 
 </html>
