@@ -119,29 +119,25 @@ main {
     margin: 300px;
 }
 
+
 #conteudo-esquerdo {
     display: flex;
-    width: 300px;
+    width: 350px;
     flex-flow: column wrap;
+    margin-top: 0px;
 }
 
 
 .iframe {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0px;
-    width: -300px;
-    height: 250px;
+    width: 280px;
+    height: 240px;
+    margin: 0px auto 0px;
 }
 
 .hora {
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-    height: 240px;
-    width: 280px;
-    
+    width: 353px;
+    height: 237px;
+    margin: 0px -32px 0px;
 }
 
 #input-contatos {

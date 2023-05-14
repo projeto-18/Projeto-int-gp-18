@@ -37,7 +37,6 @@ main {
 }
 
 .bi-bar-chart-line {
-    position: absolute;
     margin: 300px;
 }
 
@@ -45,7 +44,7 @@ main {
     display: flex;
     width: 350px;
     flex-flow: column wrap;
-    margin-top: 10px;
+    margin-top: 0px;
 }
 
 #nome-tela{
@@ -58,47 +57,158 @@ main {
     background-color: aliceblue;
 }
 
-#med{
+.formulario-container{
     display: flex;
-    align-items: flex-start;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    gap: 10px;
-    margin-left: -10%;
-    
+    flex-direction: column;
+    font-size: 0.6em;
+    width: 400px;
+    height: 230px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.541);
+    margin: -100px auto 100px
+  }
+  
+  #n1{
+    font-size: 1.5em;
+    width: 250px;
+    height: 30px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.733);
+    border: none;
+    text-indent: 5px;
+  }
+  
+  #n2{
+    font-size: 1.5em;
+    width: 250px;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.733);
+    border: none;
+    text-indent: 5px;
+  }
+  #parente{
+   
+    width: 120px;
+    height: 40px;
+    margin-top: 30px;
+    border: none;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.541);
+    font-size: 1.8em;
+    border-radius: 8px;
+  }
+  
+  #parente2{
+   
+    width: 120px;
+    height: 40px;
+    margin-top: 30px;
+    border: none;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.541);
+    font-size: 1.8em;
+    border-radius: 8px;
+  }
+  
+  #tel1{
+    display: block;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  #tel2{
+    display: block;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  #tel{
+    font-size: 2em;
+    width: 250px;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.733);
+    border: none;
+  }
+  
+  .titulo i {
+    font-size: 30px;
+    margin: 6px 9px;
+}
+
+  .label{
+    font-size: 2em;
+    padding-left: 20px;
+    padding-top: 0px;
+  }
+  
+  
+  #botao{
+    margin-bottom: -520px;
+    font-size: 15pt;
+    width: 700px;
+    height: 50px;
+    cursor: pointer;
+    background-color: hsl(133, 41%, 31%);
+    color: hsl(0, 0%, 80%);
+    border: 0;
+    border-radius: 20px;
+    transition: 0.3s;
+  }
+  
+  #botao:hover{
+    font-size: 20pt;
+    background-color: hsl(0, 0%, 80%);
+    color: hsl(133, 41%, 31%);
+    border: 1px solid hsl(0, 0%, 80%);
+    transform: scale(1.1);
+  }
+  
+  #btt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+  }
+
+#conteudo-esquerdo {
+    display: flex;
+    width: 350px;
+    flex-flow: column wrap;
+    margin-top: 0px;
 }
 
 
-.superior {
-    height: 240px;
-    width: 280px;
- }
-
 .iframe {
-    margin-top: 100px;
-    width: 250px;
-    height: 340px;
-    margin-left: -30px;
-   
+    width: 280px;
+    height: 240px;
+    margin: 0px auto 0px;
 }
 
 #iframe-des {
-    width: 280px;
-    height: 240px;
-    border: none;
-    overflow: hidden;
-    margin-left: 33px;
-    margin-top: -55px;
-    
+    width: 343px;
+    height: 237px;
+    margin: 0px -32px 0px;
 }
 
-
 #menu-esq {
-    position: absolute;
     display: flex;
     flex-direction: column;
-    margin: -180px 100px;
-    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    gap: 0px;
 }
 
 #menu-dir {

@@ -1,32 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="MinhaSaude">
     <title>MinhaSaúde</title>
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
- 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <link href="../css/cabecalho.css" rel="stylesheet" type="text/css" />
-    <link href="../css/contato_emergencial.css" rel="stylesheet" type="text/css" />
+    <link href="../css/contato.css" rel="stylesheet" type="text/css" />
     <link href="../css/rodape.css" rel="stylesheet" type="text/css" />
 </head>
-
 <body>
     <header>
         <li><img id="logo" src="../assets/image/Logo.png" alt="MinhaSaúde"></li>
-
         <nav id="cabecalho">
             <h1>MinhaSaúde</h1>
         </nav>
     </header>
     <section id="titulo">
-        <h2>Contato Emergencial</h2>
+        <nav>
+            <div class="titulo">
+                <i class="bi bi-telephone-plus"></i>
+                Contato
+            </div > 
+        </nav>
     </section>
     <section id="conteudo-esquerdo">
         <nav class="superior">
@@ -37,13 +34,11 @@
                 </div>
             </div>
         </nav>
-        
             <div class="iframe">
                 <iframe id="iframe-des" src="hora.html" frameborder="0"></iframe>
             </div>
-        
     </section>
-    
+    <main>
     <div id="fcon">
         <form  action="#" method="post" autocomplete="off" id="form">
             <div class="formulario-container">
@@ -74,8 +69,10 @@
                             placeholder="(xx)xxxxx-xxxx"
                         >
                     </div>
-        
+                    
             </div>
+
+            <br>
             <div id="button">
                 <input
                     type="button"
@@ -86,27 +83,18 @@
             </div>
         </form>
     </div>
+    </main>
+    
+    
 
         
 
-    <div>
-        <a href="../html/emergencia.html"><input type="submit" id="emergencia" name="acao" value="Emergência" /></a>
-    </div>
+
     <footer>
         <nav>
             <ul id="container">
                 <li><a href="../html/menu.html"><img id="navegacao" src="../assets/image/home.png" alt="HomePage"></a>
-                </li>
-                <li>
-                    <a href="#"><img id="navegacao" src="../assets/image/document.png" alt="HomePage"></a>
-                </li>
-                <li>
-                    <a href="#"><img id="navegacao" src="../assets/image/medical.png" alt="HomePage"></a>
-                </li>
-                <li>
-                    <a href="#"><img id="navegacao" src="../assets/image/heart.png" alt="HomePage"></a>
-                </li>
-                <li>
+                
                     <a href="../html/sobre.html"><img id="navegacao" src="../assets/image/help.png" alt="HomePage"></a>
                 </li>
                 <li>
