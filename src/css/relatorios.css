@@ -74,3 +74,27 @@ main {
     height: 237px;
     margin: 0px -32px 0px;
 }
+
+#emergencia {
+    font-size: 35pt;
+    width: 1000px;
+    height: 70px;
+    cursor: pointer;
+    background-color: hsl(0, 100%, 50%);
+    color: hsl(0, 0%, 80%);
+    border: 0;
+    border-radius: 20px;
+    transition: 0.3s;
+    margin-top: 5px;
+    justify-content: center;
+    align-items: center;
+    margin: 600px auto 0px;
+  }
+  
+  #emergencia:hover {
+    font-size: 20pt;
+    background-color: hsl(0, 100%, 61%);
+    color: hsl(0, 0%, 80%);
+    border: 1px solid hsl(0, 0%, 80%);
+    transform: scale(1.1);
+  }

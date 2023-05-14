@@ -15,13 +15,6 @@ body {
     flex: 1 1 100vw;
 }
 
-nav,
-main{
-    background: hsl(46.3, 100%, 91%);
-    display: flex;
-    margin: 3px;
-}
-
 nav {
     flex: 1 1 200px;
     align-items: center;
@@ -36,52 +29,123 @@ main {
     /* conta: 100% tamanho vertical - (Header (100px) + Footer(100px) + Margin (((3px+3px)/4)=24)) = (100 + 100 + 24 =224) */
 }
 
-#titulo {
+nav,
+main {
+    background: hsl(46.3, 100%, 91%);
     display: flex;
+    margin: 3px;
+}
+
+#titulo {
+    font-size: 35px;
+    display: flex;
+    color: hsl(133, 41%, 31%);
     margin: 3px;
     flex: 1 1 100vw;
     height: 50px;
 }
 
 .titulo i {
-    font-size: 50px;
-    margin: 16px 0px;
+    font-size: 30px;
+    margin: 6px 9px;
+}
+
+.bi-bar-chart-line {
+    position: absolute;
+    margin: 300px;
 }
 
 #conteudo-esquerdo {
     display: flex;
     width: 350px;
     flex-flow: column wrap;
-    margin-top: 10px;
+    margin-top: 0px;
 }
 
-.superior {
-    height: 240px;
-    width: 280px;
- }
 
 .iframe {
-    margin-top: 100px;
-    width: 250px;
-    height: 340px;
-    margin-left: -30px;
-   
+    width: 280px;
+    height: 240px;
+    margin: 0px auto 0px;
 }
 
 #iframe-des {
-    width: 280px;
-    height: 240px;
-    border: none;
-    overflow: hidden;
-    margin-left: 33px;
-    margin-top: -55px;
-    
+    width: 343px;
+    height: 237px;
+    margin: 0px -32px 0px;
+}
+
+#menu-esq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    gap: 0px;
+}
+
+#menu-dir {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+}
+
+#fcon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+}
+
+#form{
+  
+}
+
+#input-menu {
+    font-size: 15pt;
+    width: 300px;
+    height: 60px;
+    cursor: pointer;
+    background-color: hsl(133, 41%, 31%);
+    color: hsl(0, 0%, 80%);
+    border: 0;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+#input-menu:hover {
+    font-size: 20pt;
+    background-color: hsl(0, 0%, 80%);
+    color: hsl(133, 41%, 31%);
+    border: 1px solid hsl(0, 0%, 80%);
+    transform: scale(1.1);
+}
+
+#input-menu-ajuda {
+    font-size: 25pt;
+    width: 300px;
+    height: 60px;
+    cursor: pointer;
+    background-color: hsl(0, 100%, 50%);
+    color: hsl(0, 0%, 80%);
+    border: 0;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+#input-menu-ajuda:hover {
+    font-size: 20pt;
+    background-color: hsl(0, 100%, 61%);
+    color: hsl(0, 0%, 80%);
+    border: 1px solid hsl(0, 0%, 80%);
+    transform: scale(1.1);
 }
 
 #emergencia {
-    position: absolute;
     font-size: 35pt;
-    margin: 420px -1100px;
     width: 1000px;
     height: 70px;
     cursor: pointer;
@@ -90,7 +154,9 @@ main {
     border: 0;
     border-radius: 20px;
     transition: 0.3s;
+    margin-top: 5px;
     justify-content: center;
+    align-items: center;
 }
 
 #emergencia:hover {
@@ -101,8 +167,8 @@ main {
     transform: scale(1.1);
 }
 
-@media only screen and (max-width: 923px) {
-    main {
-        height: calc(100vh - 224px);
-    }
+.home {
+    background-color: hsl(133, 41%, 31%);
+    border-radius: 20px;
+
 }
