@@ -36,7 +36,8 @@ Após abrir o aplicativo, você precisará criar um usuário e senha para acessa
 - Acesse a página inicial do aplicativo.
 - Clique em "Cadastre-se" para ser redirecionado para a página de cadastro.
 
-# Criar Usuário e Senha: Para começar a usar o aplicativo, é necessário criar um usuário e senha. Essas credenciais serão utilizadas para acessar a página principal do aplicativo.
+# Criar Usuário e Senha: 
+Para começar a usar o aplicativo, é necessário criar um usuário e senha. Essas credenciais serão utilizadas para acessar a página principal do aplicativo.
 # Cadastro e Confirmação: 
 Após preencher os campos de cadastro, é necessário confirmar as informações fornecidas. Uma vez confirmado o cadastro, aguarde 5 segundos para ser redirecionado automaticamente para a página de login.
 # Página Principal: 
