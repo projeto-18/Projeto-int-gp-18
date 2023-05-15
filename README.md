@@ -50,6 +50,12 @@ O aplicativo também conta com um botão de emergência, que oferece caminhos pa
 - Polícia Militar: Redirecionamento para contato de emergência com a Polícia Militar.
 - Apoio à Saúde Mental: Opção para buscar ajuda profissional em questões relacionadas à saúde mental e emocional.
 - Emergência e Prevenção ao Suicídio: Recursos para assistência e apoio em casos de emergência e prevenção ao suicídio.
+# Sobre o Projeto
+O MinhaSaúde é um projeto desenvolvido como parte de um projeto integrador. Ele foi criado para fornecer acesso fácil a informações de saúde e serviços relacionados. Para saber mais detalhes sobre o projeto e conhecer os membros da equipe, visite a página "Sobre" no aplicativo.
+# Licença
+Este aplicativo é distribuído sob a licença MIT. Leia o arquivo LICENSE para obter mais informações sobre os direitos e restrições desta licença.
+# Contato
+Se você tiver alguma dúvida ou precisar de suporte, entre em contato conosco por meio do formulário de contato no aplicativo ou envie um e-mail para pj.minhasaude@gmail.com. 
 
 
 
