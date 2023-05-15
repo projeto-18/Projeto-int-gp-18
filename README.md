@@ -29,9 +29,8 @@ A seguir, estão listadas as extensões e tecnologias utilizadas no desenvolvime
 2. Clique com o botão direito do mouse dentro do arquivo e selecione a opção "Open with Live Server" para iniciar o servidor local.
 3. O navegador padrão será aberto automaticamente exibindo a aplicação MinhaSaúde.
 
-# Uso
-Após abrir o aplicativo, você precisará criar um usuário e senha para acessar a página de menu. Siga as etapas abaixo:
 # Instruções de Uso
+2. Após abrir o aplicativo, você precisará criar um usuário e senha para acessar a página de menu. Siga as etapas abaixo:
 1. Crie uma conta de usuário:
 - Acesse a página inicial do aplicativo.
 - Clique em "Cadastre-se" para ser redirecionado para a página de cadastro.
