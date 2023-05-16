@@ -154,3 +154,19 @@ a:hover{
   border-radius: 4px;
   display: none;
 }
+
+@media only screen and (max-width: 923px) {
+    header{
+      margin: 0px -125px 0px;
+    }
+    
+    #cabecalho{
+      margin-top: -20px;
+      margin-left: -300px;
+      
+    }
+    
+    .container{
+      margin: 30px -100px 0px;
+    }
+}
