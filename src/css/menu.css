@@ -158,5 +158,45 @@ main {
 .home {
     background-color: hsl(133, 41%, 31%);
     border-radius: 20px;
+}
 
+@media only screen and (max-width: 1362px) {
+    main {
+        height: calc(100vh - 446px);
+        width: 230px;
+    }   
+}
+
+@media only screen and (max-width: 768px) {
+    #conteudo-esquerdo {
+        width: 100vw;
+        flex-flow: row;
+        margin-left: -50px;
+    }
+    main {
+        height: calc(100vh - 600px);
+        width: 230px;
+    }
+
+    #emergencia {
+        font-size: 30pt;
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #conteudo-esquerdo {
+        width: 100vw;
+        flex-flow: row;
+        margin-left: -10px;
+    }
+    main {
+        height: calc(100vh - 600px);
+        width: 230px;
+    }
+
+    #emergencia {
+        font-size: 25pt;
+        width: 550px;
+    }
 }

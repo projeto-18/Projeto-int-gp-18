@@ -1,77 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Fraunces:wght@700&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Boogaloo', cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Boogaloo', cursive;
 }
 
 body {
-    background: hsl(46.3, 100%, 91%);
-    display: flex;
-    flex-wrap: wrap;
-    margin: 3px;
-    flex: 1 1 100vw;
+  background: hsl(46.3, 100%, 91%);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3px;
+  flex: 1 1 100vw;
 }
 
 nav {
-    flex: 1 1 200px;
-    align-items: center;
-    justify-content: center;
+  flex: 1 1 200px;
+  align-items: center;
+  justify-content: center;
 }
 
 main {
-    flex: 20 1 500px;
-    height: calc(100vh - 224px);
-    align-items: center;
-    justify-content: center;
-    /* conta: 100% tamanho vertical - (Header (100px) + Footer(100px) + Margin (((3px+3px)/4)=24)) = (100 + 100 + 24 =224) */
+  flex: 20 1 500px;
+  height: calc(100vh - 224px);
+  align-items: center;
+  justify-content: center;
+  /* conta: 100% tamanho vertical - (Header (100px) + Footer(100px) + Margin (((3px+3px)/4)=24)) = (100 + 100 + 24 =224) */
 }
 
 nav,
 main {
-    background: hsl(46.3, 100%, 91%);
-    display: flex;
-    margin: 3px;
+  background: hsl(46.3, 100%, 91%);
+  display: flex;
+  margin: 3px;
 }
 
 #titulo {
-    font-size: 35px;
-    display: flex;
-    color: hsl(133, 41%, 31%);
-    margin: 3px;
-    flex: 1 1 100vw;
-    height: 50px;
+  font-size: 35px;
+  display: flex;
+  color: hsl(133, 41%, 31%);
+  margin: 3px;
+  flex: 1 1 100vw;
+  height: 50px;
 }
 
 .titulo i {
-    font-size: 30px;
-    margin: 6px 9px;
+  font-size: 30px;
+  margin: 6px 9px;
 }
 
 .bi-bar-chart-line {
-    margin: 300px;
+  margin: 300px;
 }
 
 #conteudo-esquerdo {
-    display: flex;
-    width: 350px;
-    flex-flow: column wrap;
-    margin-top: 0px;
+  display: flex;
+  width: 350px;
+  flex-flow: column wrap;
+  margin-top: 0px;
 }
 
 
 .iframe {
-    width: 280px;
-    height: 240px;
-    margin: 0px auto 0px;
+  width: 280px;
+  height: 240px;
+  margin: 0px auto 0px;
 }
 
 #iframe-des {
-    width: 343px;
-    height: 237px;
-    margin: 0px -32px 0px;
+  width: 343px;
+  height: 237px;
+  margin: 0px -32px 0px;
 }
 
 #sentimentos {
@@ -218,3 +218,79 @@ textarea {
   transform: scale(1.1);
 }
 
+@media only screen and (max-width: 1362px) {
+  main {
+    height: calc(100vh - 446px);
+    width: 230px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #conteudo-esquerdo {
+    width: 100vw;
+    flex-flow: row;
+    margin-left: -50px;
+  }
+
+  main {
+    height: calc(100vh - 600px);
+    width: 230px;
+  }
+
+  #emergencia {
+    font-size: 30pt;
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  #logo {
+    position: relative;
+    margin-left: 250px;
+  }
+
+  #cabecalho {
+    margin-left: -50px;
+  }
+
+  .titulo {
+    margin-left: -50px;
+  }
+
+  #conteudo-esquerdo {
+    display: flex;
+    width: 100vw;
+    flex-flow: column wrap;
+    margin: 10px 100px 0px;
+  }
+
+  /*.iframe {
+    margin-left: 50px;
+  }
+*/
+  main {
+    height: calc(100vh - 446px);
+  }
+   
+ #conteudo-direito{
+    margin: 250px -340px;
+  }
+
+  #image {
+    width: 70px;
+    height: 70px;
+  }
+
+  #container {
+    width: 100vw;
+    margin-bottom: -1450px;
+    margin-left: -230px;
+  }
+
+  /*
+  #emergencia {
+      font-size: 25pt;
+      width: 550px;
+  }*/
+}
