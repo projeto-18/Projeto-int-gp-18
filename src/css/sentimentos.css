@@ -61,7 +61,6 @@ main {
   margin-top: 0px;
 }
 
-
 .iframe {
   width: 280px;
   height: 240px;
@@ -218,6 +217,69 @@ textarea {
   transform: scale(1.1);
 }
 
+
+@media only screen and (max-width: 1161px) {
+  main {
+    height: calc(100vh - 650px);
+  }
+
+  #conteudo-esquerdo {
+    display: flex;
+    width: 100vw;
+    flex-flow: row;
+    margin: 10px 100px 0px;
+  }
+
+  .iframe {
+    margin-left: 70px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    margin-left: -30px;
+  }
+
+  #conteudo-esquerdo {
+    margin-left: -20px;
+  }
+
+  @media only screen and (max-width: 718px) {
+
+    #conteudo-esquerdo {
+      flex-flow: row;
+      margin-left: -20px;
+    }
+
+    main {
+      margin-left:-30px;
+    }
+
+    #conteudo-direito{
+      margin: 10px 0px;
+    }
+    #conta{
+      margin: -70px 0px 0px;
+    }
+    #titulo-mensagem{
+      margin: -10px 30px 0px;
+    }
+    #text{
+      width: 28em;
+      height: 100px;
+      margin: -120px 200px 0px;
+    }
+
+    #countdown{
+      margin: 0px 250px 0px;
+    }
+
+    #register_button{
+      margin-left: 420px;
+    }
+ }
+
+ 
 @media only screen and (max-width: 1362px) {
   main {
     height: calc(100vh - 446px);
@@ -265,10 +327,9 @@ textarea {
     margin: 10px 100px 0px;
   }
 
-  /*.iframe {
-    margin-left: 50px;
-  }
+ 
 */
+  /*
   main {
     height: calc(100vh - 446px);
   }
@@ -292,5 +353,5 @@ textarea {
   #emergencia {
       font-size: 25pt;
       width: 550px;
-  }*/
+  }
 }
