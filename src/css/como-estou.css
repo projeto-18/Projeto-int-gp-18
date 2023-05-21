@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Fraunces:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Boogaloo', cursive;
+}
+
+body {
+    background: hsl(46.3, 100%, 91%);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3px;
+    flex: 1 1 100vw;
+}
+
+nav {
+    flex: 1 1 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    flex: 20 1 500px;
+    height: calc(100vh - 224px);
+    align-items: center;
+    /* conta: 100% tamanho vertical - (Header (100px) + Footer(100px) + Margin (((3px+3px)/4)=24)) = (100 + 100 + 24 =224) */
+}
+
+nav,
+main {
+    background: hsl(46.3, 100%, 91%);
+    display: flex;
+    margin: 3px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 10px;
+}
+
+.card {
+    background-color: #ffffff80;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 1px 0px #00000060
+}
+
+.como-estou {
+    font-size: 45pt;
+    text-align: center;
+    padding: 50px;
+    color: hsl(0, 100%, 50%);
+    animation: pisca-pisca 1s linear infinite;
+}
+
+.item {
+    font-size: 25pt;
+    text-align: center;
+    color: hsl(133, 41%, 31%);
+}
+
+.confirmacao {
+    font-size: 15pt;
+    text-decoration: none;
+    justify-content: center;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+    background-color: hsl(133, 41%, 31%);
+    color: hsl(0, 0%, 80%);
+    padding: 7px;
+    margin-top: 150px;
+    border-radius: 8px;
+    outline: none;
+    transition: all .4s ease-out;
+}
+
+.confirmacao:hover {
+    font-size: 18pt;
+    background-color: hsl(0, 0%, 80%);
+    color: hsl(133, 41%, 31%);
+    border: 1px solid hsl(0, 0%, 80%);
+    transform: scale(1.1);
+}

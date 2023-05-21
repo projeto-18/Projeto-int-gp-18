@@ -47,3 +47,32 @@ imgContainer.addEventListener("mouseup", function() {
   this.classList.remove("pressed");
 });
 
+function showModal() {
+    var element = document.getElementById("modal");
+    element.classList.add("show-modal");
+}
+
+function hideModal(){
+    var element = document.getElementById("modal");
+    element.classList.remove("show-modal")
+}
+
+function showModal1() {
+    var element = document.getElementById("modal");
+    element.classList.add("show-modal");
+}
+
+function hideModal1(){
+    var element = document.getElementById("modal");
+    element.classList.remove("show-modal")
+}
+
+function showModal2() {
+    var element = document.getElementById("modal");
+    element.classList.add("show-modal");
+}
+
+function hideModal2(){
+    var element = document.getElementById("modal");
+    element.classList.remove("show-modal")
+}

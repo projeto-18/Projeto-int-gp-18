@@ -27,7 +27,7 @@ main {
     flex: 20 1 500px;
     height: calc(100vh - 224px);
 }
-
+ 
 .container {
   display: flex;
   justify-content: center;
