@@ -138,12 +138,20 @@ a:hover{
   color: hsl(133, 41%, 31%);
 }
 
-.fa-eye{
-  position: absolute;
-  top: 15px;
-  right: 10px;
-  cursor: pointer;
+.bi-eye-fill {
+  font-size: 15px;
   color: hsl(133, 41%, 31%);
+  position: fixed;
+  margin: 0px -20px;
+  cursor: pointer;
+}
+
+.bi-eye-slash-fill {
+  font-size: 15px;
+  color: hsl(133, 41%, 31%);
+  position: fixed;
+  margin: 0px -20px;
+  cursor: pointer;
 }
 
  #msgError{
@@ -169,4 +177,36 @@ a:hover{
     .container{
       margin: 30px -100px 0px;
     }
+}
+/* squares */
+body {
+  overflow: hidden;
+}
+
+.squares li {
+  width: 40px;
+  height: 40px;
+  /* background-color: rgba(255, 255, 255, 0.15); */
+  background-color: rgba(231, 4, 4, 0.15);
+  /* background-color: hsl(47, 75%, 72%); */
+  display: block;
+  position: absolute;
+  bottom: -40px;
+  animation: up 2s infinite alternate;
+  z-index: -1
+}
+
+@keyframes up {
+  from {
+    opacity: 0;
+    transform: translateY(0);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    transform: translateY(-800px) rotate(960deg);
+  }
 }
